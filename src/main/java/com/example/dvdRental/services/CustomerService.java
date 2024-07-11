@@ -13,7 +13,7 @@ public interface CustomerService {
 
     Optional<CustomerDTO> findCustomerById(Integer customerId);
 
-    List<CustomerInfoDTO> findAllCustomersInfo();
+    List<CustomerInfoDTO> findAllCustomersInfo(Pageable pageable);
 
     Optional<CustomerInfoDTO> findCustomerInfoById();
 

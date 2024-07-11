@@ -17,10 +17,24 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
 //    List<Customer> findByFirstNameContainingIgnoreCaseOrLastNameContainingIgnoreCaseOrAddressCityCityContainingIgnoreCaseOrAddressCityCountryCountryContainingIgnoreCase(String firstName, String lastName, String city, String country);
 
-    @Query("SELECT c FROM Customer c" +
-            " WHERE LOWER(c.firstName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
+    @Query("SELECT c FROM Customer c WHERE " +
+            "CASE " +
+            "WHEN (:searchTerm is null AND :activeBool is null) THEN TRUE " +
+            "WHEN (:searchTerm is null AND :activeBool is not null) THEN (c.activeBool = :activeBool) " +
+            "WHEN (:searchTerm is not null AND :activeBool is null) THEN" +
+            " (LOWER(c.firstName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
             " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
             " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', :searchTerm, '%'))")
-    Page<Customer> findCustomersBySearchTerm(@Param("searchTerm") String searchTerm, Pageable pageable);
+            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', :searchTerm, '%'))) " +
+            "ELSE (LOWER(c.firstName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
+            " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
+            " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
+            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', :searchTerm, '%')))" +
+            " AND (c.activeBool = :activeBool) " +
+            "END")
+    Page<Customer> findCustomersBySearchTermAndActiveBool(
+            @Param("activeBool") Boolean activeBool,
+            @Param("searchTerm") String searchTerm,
+            Pageable pageable
+    );
 }

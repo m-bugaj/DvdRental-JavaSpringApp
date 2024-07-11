@@ -10,6 +10,7 @@ import com.example.dvdRental.model.Customer;
 import com.example.dvdRental.services.CustomerService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableArgumentResolver;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,8 +41,14 @@ public class CustomerApiController {
     }
 
     @GetMapping("/info")
-    public List<CustomerInfoDTO> findAllCustomeresInfo() {
-        return customerService.findAllCustomersInfo();
+    public List<CustomerInfoDTO> findAllCustomeresInfo(
+            @PageableDefault(
+            size = 20,
+            page = 1,
+            direction = Sort.Direction.ASC,
+            sort = {"firstName"}
+    ) Pageable pageable) {
+        return customerService.findAllCustomersInfo(pageable);
     }
 
 //    @GetMapping("/info/{id}")
@@ -64,7 +71,7 @@ public class CustomerApiController {
 
     @GetMapping("/customers")
     public ResponseEntity<List<CustomerInfoDTO>> findAllCustomerByActiveBoolAndSearch(
-            @RequestParam(value = "status", required = false) String status,
+            @RequestParam(value = "status", required = false, defaultValue = "") String status,
             @RequestParam(value = "search", required = false) String searchTerm,
             @PageableDefault(
                     size = 20,
@@ -73,17 +80,23 @@ public class CustomerApiController {
                     sort = {"firstName"}
             ) Pageable pageable) {
 
-        boolean activeBool;
+        System.out.println("Search term: " + searchTerm);
+        Boolean activeBool;
 
         if (status.equals("active")) {
             activeBool = true;
         } else if (status.equals("disabled")) {
             activeBool = false;
         } else {
-            return ResponseEntity.ok(Collections.emptyList());
+            activeBool = null;
         }
 
-        List<CustomerInfoDTO> customersInfoDTO = customerService.findAllCustomerByActiveBoolAndSearch(activeBool, searchTerm, pageable);
+        List<CustomerInfoDTO> customersInfoDTO = customerService
+                .findAllCustomerByActiveBoolAndSearch(
+                        activeBool,
+                        searchTerm,
+                        pageable
+                );
         return ResponseEntity.ok(customersInfoDTO);
 
 

@@ -55,14 +55,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<CustomerInfoDTO> findAllCustomersInfo() {
+    public List<CustomerInfoDTO> findAllCustomersInfo(Pageable pageable) {
 //        List<Customer> customers = customerRepository.findAll();
 //
 //        List<CustomerInfoDTO> customerInfoDTOS = new ArrayList<>();
 //        customerInfoDTOS = customerMapper.customerToCustomerDTO(customers)
 //
         return customerRepository
-                .findAll()
+                .findAll(pageable)
                 .stream()
                 .map(this::mapToCustomerInfoDto)
                 .collect(Collectors.toList());
@@ -74,8 +74,11 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<CustomerInfoDTO> findAllCustomerByActiveBoolAndSearch(Boolean activeBool, String searchTerm, Pageable pageable) {
-//        List<Customer> customers = customerRepository.findByFirstNameContainingIgnoreCaseOrLastNameContainingIgnoreCaseOrAddressCityCityContainingIgnoreCaseOrAddressCityCountryCountryContainingIgnoreCase(searchTerm, searchTerm, searchTerm, searchTerm);
+    public List<CustomerInfoDTO> findAllCustomerByActiveBoolAndSearch(
+            Boolean activeBool,
+            String searchTerm,
+            Pageable pageable
+    ) {
 
         Pageable modifiedPageable = PageRequest.of(
                 pageable.getPageNumber(),
@@ -83,14 +86,14 @@ public class CustomerServiceImpl implements CustomerService {
                 mapSortOrders(pageable.getSort())
         );
 
-        Page<Customer> customersPage = customerRepository.findCustomersBySearchTerm(searchTerm, modifiedPageable);
-//        List<Customer> customers = customerRepository.findCustomersBySearchTerm(searchTerm);
+        Page<Customer> customersPage = customerRepository
+                .findCustomersBySearchTermAndActiveBool(
+                        activeBool,
+                        searchTerm,
+                        modifiedPageable
+                );
 
-        List<Customer> customers = customersPage
-                .getContent()
-                .stream()
-                .filter(customer -> customer.getActiveBool().equals(activeBool))
-                .toList();
+        List<Customer> customers = customersPage.getContent();
 
         return customers
                 .stream()
