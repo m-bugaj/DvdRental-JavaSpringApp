@@ -6,6 +6,9 @@ import com.example.dvdRental.api.model.CustomerDTO;
 import com.example.dvdRental.api.model.CustomerInfoDTO;
 import com.example.dvdRental.api.model.post.PostCityDTO;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
+import com.example.dvdRental.exceptions.ApiExceptionHandler;
+import com.example.dvdRental.exceptions.DuplicateDataException;
+import com.example.dvdRental.exceptions.NotFoundException;
 import com.example.dvdRental.model.Customer;
 import com.example.dvdRental.services.CustomerService;
 import org.springframework.data.domain.Pageable;
@@ -36,8 +39,13 @@ public class CustomerApiController {
     }
 
     @GetMapping("/{id}")
-    public Optional<CustomerDTO> findCustomerInfoById(@PathVariable("id") Integer customerId) {
-        return customerService.findCustomerById(customerId);
+    public ResponseEntity<Object> findCustomerInfoById(@PathVariable("id") Integer customerId) {
+        try {
+            CustomerInfoDTO customerInfoDTO = customerService.findCustomerInfoById(customerId);
+            return ResponseEntity.ok(customerInfoDTO);
+        } catch (NotFoundException nf) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(nf.toString());
+        }
     }
 
     @GetMapping("/info")
@@ -58,8 +66,20 @@ public class CustomerApiController {
 
 
     @PostMapping
-    public ResponseEntity<CustomerDTO> createNewCustomer(@RequestBody PostCustomerDTO postCustomerDTO) {
-        return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
+        public ResponseEntity<?> createNewCustomer(@RequestBody PostCustomerDTO postCustomerDTO) {
+//        try {
+//            return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
+//        } catch (DuplicateDataException dd) {
+//            return ResponseEntity.status(HttpStatus.CONFLICT).body(dd.toString());
+//        }
+
+        try {
+            return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
+        } catch (Exception e) {
+            return ApiExceptionHandler.apiHandleException(e);
+        }
+
+
     }
 
     @PutMapping("/edit/{id}")

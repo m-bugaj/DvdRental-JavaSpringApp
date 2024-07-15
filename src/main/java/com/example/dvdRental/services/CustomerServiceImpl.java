@@ -5,6 +5,9 @@ import com.example.dvdRental.api.model.*;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
 import com.example.dvdRental.converters.AddressConverter;
 import com.example.dvdRental.converters.CustomerConverter;
+import com.example.dvdRental.exceptions.DuplicateDataException;
+import com.example.dvdRental.exceptions.InvalidDataException;
+import com.example.dvdRental.exceptions.NotFoundException;
 import com.example.dvdRental.model.*;
 import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
@@ -69,8 +72,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Optional<CustomerInfoDTO> findCustomerInfoById() {
-        return Optional.empty();
+    public CustomerInfoDTO findCustomerInfoById(Integer customerId) throws NotFoundException {
+        Optional<Customer> customerOptional = customerRepository.findCustomerByCustomerId(customerId);
+
+        if (customerOptional.isEmpty()) {
+            throw new NotFoundException("CustomerId", customerId);
+        }
+
+        return this.mapToCustomerInfoDto(customerOptional.get());
     }
 
     @Override
@@ -102,15 +111,37 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) {
+    public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException {
         Integer storeId = postCustomerDTO.getStoreId();
         Integer addressId = postCustomerDTO.getAddressId();
 
         Optional<Store> storeOptional = storeRepository.findById(storeId);
         Optional<Address> addressOptional = addressRepository.findById(addressId);
 
-        if (storeOptional.isEmpty() || addressOptional.isEmpty()) {
-            throw new EntityNotFoundException("Country not found: " + storeId + " or " + addressId);
+        String firstName = postCustomerDTO.getFirstName();
+        String lastName = postCustomerDTO.getFirstName();
+
+        System.out.println(firstName);
+
+        if (!(firstName.matches("^[a-zA-Z]*$") || lastName.matches("^[a-zA-Z]*$"))) {
+            throw new InvalidDataException("firstName lub lastName");
+        }
+
+        if (addressOptional.isEmpty()) {
+            throw new NotFoundException("Address", addressId);
+        }
+
+        if (storeOptional.isEmpty()) {
+            throw new NotFoundException("Store", storeId);
+        }
+
+        if (customerRepository.findCustomerByEmail(postCustomerDTO.getEmail()).isPresent()) {
+            throw new DuplicateDataException(
+                    "Customer",
+                    "Email",
+                    postCustomerDTO.getEmail(),
+                    postCustomerDTO.getAddressId()
+            );
         }
 
         Customer customer = new Customer();

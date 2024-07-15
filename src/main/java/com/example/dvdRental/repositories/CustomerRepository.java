@@ -9,9 +9,14 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
+
+    Optional<Customer> findCustomerByCustomerId(Integer customerId);
+
+//    Optional<Customer> findCustomerByEmail(String email);
 
     List<Customer> findByActiveBool(Boolean activeBool);
 
@@ -37,4 +42,6 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
             @Param("searchTerm") String searchTerm,
             Pageable pageable
     );
+
+    Optional<Customer> findCustomerByEmail(String email);
 }
