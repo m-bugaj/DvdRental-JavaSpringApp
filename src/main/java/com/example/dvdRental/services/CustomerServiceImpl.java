@@ -19,6 +19,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -119,12 +120,14 @@ public class CustomerServiceImpl implements CustomerService {
         Optional<Address> addressOptional = addressRepository.findById(addressId);
 
         String firstName = postCustomerDTO.getFirstName();
-        String lastName = postCustomerDTO.getFirstName();
+        String lastName = postCustomerDTO.getLastName();
 
-        System.out.println(firstName);
+        if (!(firstName.matches("^[a-zA-Z]*$"))) {
+            throw new InvalidDataException("firstName");
+        }
 
-        if (!(firstName.matches("^[a-zA-Z]*$") || lastName.matches("^[a-zA-Z]*$"))) {
-            throw new InvalidDataException("firstName lub lastName");
+        if (!(lastName.matches("^[a-zA-Z]*$"))) {
+            throw new InvalidDataException("lastName");
         }
 
         if (addressOptional.isEmpty()) {
@@ -145,11 +148,11 @@ public class CustomerServiceImpl implements CustomerService {
         }
 
         Customer customer = new Customer();
-        customer.setFirstName(postCustomerDTO.getFirstName());
-        customer.setLastName(postCustomerDTO.getLastName());
+        customer.setFirstName(firstName);
+        customer.setLastName(lastName);
         customer.setEmail(postCustomerDTO.getEmail());
         customer.setActiveBool(postCustomerDTO.getActivebool());
-        customer.setCreateDate(postCustomerDTO.getCreateDate());
+//        customer.setCreateDate(postCustomerDTO.getCreateDate());
         customer.setActive(postCustomerDTO.getActive());
         customer.setStore(storeOptional.get());
         customer.setAddress(addressOptional.get());
@@ -161,7 +164,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) {
+    public CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) throws NotFoundException {
 //        Customer customer = customerMapper.toCustomer(postCustomerDTO);
 //        customer.setCustomerId(customerId);
 //
@@ -175,17 +178,25 @@ public class CustomerServiceImpl implements CustomerService {
         Optional<Store> storeOptional = storeRepository.findById(storeId);
         Optional<Address> addressOptional = addressRepository.findById(addressId);
 
-        if (storeOptional.isEmpty() || addressOptional.isEmpty()) {
-            throw new EntityNotFoundException("Country not found: " + storeId + " or " + addressId);
+//        if (storeOptional.isEmpty() || addressOptional.isEmpty()) {
+//            throw new EntityNotFoundException("Country not found: " + storeId + " or " + addressId);
+//        }
+
+        if (addressOptional.isEmpty()) {
+            throw new NotFoundException("Address", addressId);
         }
 
+        if (storeOptional.isEmpty()) {
+            throw new NotFoundException("Store", storeId);
+        }
+        System.out.println("ID: " + customerId);
         Customer customer = new Customer();
         customer.setCustomerId(customerId);
         customer.setFirstName(postCustomerDTO.getFirstName());
         customer.setLastName(postCustomerDTO.getLastName());
         customer.setEmail(postCustomerDTO.getEmail());
         customer.setActiveBool(postCustomerDTO.getActivebool());
-        customer.setCreateDate(postCustomerDTO.getCreateDate());
+//        customer.setCreateDate(postCustomerDTO.getCreateDate());
         customer.setActive(postCustomerDTO.getActive());
         customer.setStore(storeOptional.get());
         customer.setAddress(addressOptional.get());
@@ -198,7 +209,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomer(Integer customerId) {
-
+        customerRepository.deleteById(customerId);
     }
 
     private CustomerInfoDTO mapToCustomerInfoDto(Customer customer) {

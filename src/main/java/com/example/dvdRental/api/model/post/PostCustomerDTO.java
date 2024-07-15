@@ -16,7 +16,7 @@ public class PostCustomerDTO {
     private String email;
     private Integer addressId;
     private Boolean activebool;
-    private LocalDate createDate;
+//    private LocalDate createDate;
 //    private Timestamp lastUpdate;
     private Integer active;
 }

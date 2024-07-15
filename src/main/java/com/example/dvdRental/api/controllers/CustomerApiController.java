@@ -83,10 +83,15 @@ public class CustomerApiController {
     }
 
     @PutMapping("/edit/{id}")
-    public ResponseEntity<CustomerDTO> updateCustomer(
+    public ResponseEntity<?> updateCustomer(
             @PathVariable Integer id,
             @RequestBody PostCustomerDTO postCustomerDTO) {
-        return new ResponseEntity<CustomerDTO>(customerService.updateCustomer(id, postCustomerDTO), HttpStatus.OK);
+        try {
+            return new ResponseEntity<CustomerDTO>(customerService.updateCustomer(id, postCustomerDTO), HttpStatus.OK);
+        } catch (Exception e) {
+            return ApiExceptionHandler.apiHandleException(e);
+        }
+
     }
 
     @GetMapping("/customers")

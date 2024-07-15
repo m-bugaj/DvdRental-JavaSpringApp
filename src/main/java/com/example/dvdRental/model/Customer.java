@@ -87,7 +87,7 @@ public class Customer {
 //    )
 //    private Rental rental;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
     @Builder.Default
     private List<Payment> payments = new ArrayList<>();
 

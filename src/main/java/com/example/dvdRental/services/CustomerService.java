@@ -28,7 +28,7 @@ public interface CustomerService {
 
     CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException;
 
-    CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO);
+    CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) throws NotFoundException;
 
     void deleteCustomer(Integer customerId);
 }
