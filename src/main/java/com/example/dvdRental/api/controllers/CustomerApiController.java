@@ -1,28 +1,19 @@
 package com.example.dvdRental.api.controllers;
 
-import com.example.dvdRental.api.model.AddressDTO;
-import com.example.dvdRental.api.model.CityDTO;
 import com.example.dvdRental.api.model.CustomerDTO;
 import com.example.dvdRental.api.model.CustomerInfoDTO;
-import com.example.dvdRental.api.model.post.PostCityDTO;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
 import com.example.dvdRental.exceptions.ApiExceptionHandler;
-import com.example.dvdRental.exceptions.DuplicateDataException;
 import com.example.dvdRental.exceptions.NotFoundException;
-import com.example.dvdRental.model.Customer;
 import com.example.dvdRental.services.CustomerService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableArgumentResolver;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/customer")
@@ -66,20 +57,12 @@ public class CustomerApiController {
 
 
     @PostMapping
-        public ResponseEntity<?> createNewCustomer(@RequestBody PostCustomerDTO postCustomerDTO) {
-//        try {
-//            return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
-//        } catch (DuplicateDataException dd) {
-//            return ResponseEntity.status(HttpStatus.CONFLICT).body(dd.toString());
-//        }
-
+    public ResponseEntity<?> createNewCustomer(@RequestBody PostCustomerDTO postCustomerDTO) {
         try {
             return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
         } catch (Exception e) {
             return ApiExceptionHandler.apiHandleException(e);
         }
-
-
     }
 
     @PutMapping("/edit/{id}")
@@ -123,7 +106,16 @@ public class CustomerApiController {
                         pageable
                 );
         return ResponseEntity.ok(customersInfoDTO);
+    }
 
+    @DeleteMapping("{id}")
+    public ResponseEntity<?> deleteCustomer(@PathVariable Integer id) {
+        try {
+            customerService.deleteCustomer(id);
+            return new ResponseEntity<Void>(HttpStatus.OK);
+        } catch (Exception e) {
+            return ApiExceptionHandler.apiHandleException(e);
+        }
 
     }
 

@@ -75,9 +75,9 @@ public class Customer {
 
     private Integer active;
 
-//    @OneToMany(mappedBy = "customer")
-//    @Builder.Default
-//    private List<Rental> rentals = new ArrayList<>();
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
+    @Builder.Default
+    private List<Rental> rentals = new ArrayList<>();
 
 //    @OneToOne(
 //            mappedBy = "customer"

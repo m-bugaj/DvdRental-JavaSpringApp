@@ -3,7 +3,6 @@ package com.example.dvdRental.services;
 import com.example.dvdRental.api.mapper.CustomerMapper;
 import com.example.dvdRental.api.model.*;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
-import com.example.dvdRental.converters.AddressConverter;
 import com.example.dvdRental.converters.CustomerConverter;
 import com.example.dvdRental.exceptions.DuplicateDataException;
 import com.example.dvdRental.exceptions.InvalidDataException;
@@ -12,15 +11,13 @@ import com.example.dvdRental.model.*;
 import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
 import com.example.dvdRental.repositories.StoreRepository;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -38,7 +35,6 @@ public class CustomerServiceImpl implements CustomerService {
         this.addressRepository = addressRepository;
         this.customerMapper = customerMapper;
     }
-
 
     @Override
     public List<CustomerDTO> findAllCustomers() {
@@ -60,11 +56,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<CustomerInfoDTO> findAllCustomersInfo(Pageable pageable) {
-//        List<Customer> customers = customerRepository.findAll();
-//
-//        List<CustomerInfoDTO> customerInfoDTOS = new ArrayList<>();
-//        customerInfoDTOS = customerMapper.customerToCustomerDTO(customers)
-//
         return customerRepository
                 .findAll(pageable)
                 .stream()
@@ -164,23 +155,23 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) throws NotFoundException {
-//        Customer customer = customerMapper.toCustomer(postCustomerDTO);
-//        customer.setCustomerId(customerId);
-//
-//        Customer savedCustomer = customerRepository.save(customer);
-//
-//        return customerMapper.customerToCustomerDTO(savedCustomer);
-
+    public CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) throws NotFoundException, InvalidDataException {
         Integer storeId = postCustomerDTO.getStoreId();
         Integer addressId = postCustomerDTO.getAddressId();
 
         Optional<Store> storeOptional = storeRepository.findById(storeId);
         Optional<Address> addressOptional = addressRepository.findById(addressId);
 
-//        if (storeOptional.isEmpty() || addressOptional.isEmpty()) {
-//            throw new EntityNotFoundException("Country not found: " + storeId + " or " + addressId);
-//        }
+        String firstName = postCustomerDTO.getFirstName();
+        String lastName = postCustomerDTO.getLastName();
+
+        if (!(firstName.matches("^[a-zA-Z]*$"))) {
+            throw new InvalidDataException("firstName");
+        }
+
+        if (!(lastName.matches("^[a-zA-Z]*$"))) {
+            throw new InvalidDataException("lastName");
+        }
 
         if (addressOptional.isEmpty()) {
             throw new NotFoundException("Address", addressId);
@@ -192,8 +183,8 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println("ID: " + customerId);
         Customer customer = new Customer();
         customer.setCustomerId(customerId);
-        customer.setFirstName(postCustomerDTO.getFirstName());
-        customer.setLastName(postCustomerDTO.getLastName());
+        customer.setFirstName(firstName);
+        customer.setLastName(lastName);
         customer.setEmail(postCustomerDTO.getEmail());
         customer.setActiveBool(postCustomerDTO.getActivebool());
 //        customer.setCreateDate(postCustomerDTO.getCreateDate());
@@ -208,8 +199,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void deleteCustomer(Integer customerId) {
-        customerRepository.deleteById(customerId);
+    public void deleteCustomer(Integer customerId) throws NotFoundException {
+        Optional<Customer> customerOptional = customerRepository.findById(customerId);
+
+        if (customerOptional.isEmpty()) {
+            throw new NotFoundException("Customer", customerId);
+        } else {
+            customerRepository.deleteById(customerId);
+        }
     }
 
     private CustomerInfoDTO mapToCustomerInfoDto(Customer customer) {

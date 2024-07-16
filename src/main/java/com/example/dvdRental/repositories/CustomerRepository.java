@@ -24,17 +24,17 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
     @Query("SELECT c FROM Customer c WHERE " +
             "CASE " +
-            "WHEN (:searchTerm is null AND :activeBool is null) THEN TRUE " +
-            "WHEN (:searchTerm is null AND :activeBool is not null) THEN (c.activeBool = :activeBool) " +
-            "WHEN (:searchTerm is not null AND :activeBool is null) THEN" +
-            " (LOWER(c.firstName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', :searchTerm, '%'))) " +
-            "ELSE (LOWER(c.firstName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', :searchTerm, '%'))" +
-            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', :searchTerm, '%')))" +
+            "WHEN (cast(:searchTerm as string) is null AND :activeBool is null) THEN TRUE " +
+            "WHEN (cast(:searchTerm as string) is null AND :activeBool is not null) THEN (c.activeBool = :activeBool) " +
+            "WHEN (cast(:searchTerm as string) is not null AND :activeBool is null) THEN" +
+            " (LOWER(c.firstName) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))) " +
+            "ELSE (LOWER(c.firstName) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.lastName) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.address.city.city) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%'))" +
+            " OR LOWER(c.address.city.country.country) LIKE LOWER(CONCAT('%', cast(:searchTerm as string), '%')))" +
             " AND (c.activeBool = :activeBool) " +
             "END")
     Page<Customer> findCustomersBySearchTermAndActiveBool(
