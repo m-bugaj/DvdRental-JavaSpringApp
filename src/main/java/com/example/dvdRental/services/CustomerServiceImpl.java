@@ -4,19 +4,24 @@ import com.example.dvdRental.api.mapper.CustomerMapper;
 import com.example.dvdRental.api.model.*;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
 import com.example.dvdRental.converters.CustomerConverter;
+import com.example.dvdRental.exceptions.DisposableEmailException;
 import com.example.dvdRental.exceptions.DuplicateDataException;
 import com.example.dvdRental.exceptions.InvalidDataException;
 import com.example.dvdRental.exceptions.NotFoundException;
 import com.example.dvdRental.model.*;
+import com.example.dvdRental.util.responses.DisifyResponse;
 import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
 import com.example.dvdRental.repositories.StoreRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Optional;
@@ -29,11 +34,21 @@ public class CustomerServiceImpl implements CustomerService {
     private final AddressRepository addressRepository;
     private final CustomerMapper customerMapper;
 
-    public CustomerServiceImpl(CustomerRepository customerRepository, StoreRepository storeRepository, AddressRepository addressRepository, CustomerMapper customerMapper) {
+    @Autowired
+    private final RestTemplate restTemplate;
+
+    public CustomerServiceImpl(
+            CustomerRepository customerRepository,
+            StoreRepository storeRepository,
+            AddressRepository addressRepository,
+            CustomerMapper customerMapper,
+            RestTemplate restTemplate
+    ) {
         this.customerRepository = customerRepository;
         this.storeRepository = storeRepository;
         this.addressRepository = addressRepository;
         this.customerMapper = customerMapper;
+        this.restTemplate = restTemplate;
     }
 
     @Override
@@ -103,7 +118,15 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException {
+    public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException, DisposableEmailException {
+        String email = postCustomerDTO.getEmail();
+
+        DisifyResponse disifyResponse = this.checkEmail(email);
+
+        if (disifyResponse.isDisposable()) {
+            throw new DisposableEmailException(email, "Customer");
+        }
+
         Integer storeId = postCustomerDTO.getStoreId();
         Integer addressId = postCustomerDTO.getAddressId();
 
@@ -133,7 +156,7 @@ public class CustomerServiceImpl implements CustomerService {
             throw new DuplicateDataException(
                     "Customer",
                     "Email",
-                    postCustomerDTO.getEmail(),
+                    email,
                     postCustomerDTO.getAddressId()
             );
         }
@@ -317,5 +340,11 @@ public class CustomerServiceImpl implements CustomerService {
             case "country" -> "address.city.country.country";
             default -> order.getProperty();
         };
+    }
+
+    public DisifyResponse checkEmail(String email) {
+        String url = "https://www.disify.com/api/email/" + email;
+        ResponseEntity<DisifyResponse> response = restTemplate.getForEntity(url, DisifyResponse.class);
+        return response.getBody();
     }
 }
