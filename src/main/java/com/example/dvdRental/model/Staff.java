@@ -47,12 +47,18 @@ public class Staff {
 
     private String email;
 
-    @ManyToOne
-    @JoinColumn(
+//    @ManyToOne
+//    @JoinColumn(
+//            name = "store_id",
+//            nullable = false
+//    )
+//    private Store store;
+
+    @Column(
             name = "store_id",
             nullable = false
     )
-    private Store store;
+    private Integer storeId;
 
     @Builder.Default
     @Column(nullable = false)
@@ -79,6 +85,12 @@ public class Staff {
     @OneToMany(mappedBy = "staff")
     @Builder.Default
     private List<Payment> payments = new ArrayList<>();
+
+    @OneToMany(mappedBy = "managerStaff")
+    @Builder.Default
+    private List<Store> stores = new ArrayList<>();
+
+
 
 
 }

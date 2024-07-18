@@ -12,9 +12,9 @@ public interface CustomerMapper {
 
     Customer customerInfoDTOToCustomer(CustomerInfoDTO customerDTO);
 
-    CustomerDTO customerToCustomerDTO(Customer customer);
+//    CustomerDTO customerToCustomerDTO(Customer customer);
 
-    Customer customerDTOToCustomer(CustomerDTO customerDTO);
+//    Customer customerDTOToCustomer(CustomerDTO customerDTO);
 
     PostCustomerDTO toPostCustomerDTO(Customer customer);
 

@@ -23,6 +23,7 @@ public class CustomerConverter {
         customerDTO.setCreateDate(customer.getCreateDate());
         customerDTO.setLastUpdate(customer.getLastUpdate());
         customerDTO.setActive(customer.getActive());
+        customerDTO.setGender(customer.getGender());
 
         return customerDTO;
     }
@@ -42,6 +43,7 @@ public class CustomerConverter {
         customer.setCreateDate(customerDTO.getCreateDate());
         customer.setLastUpdate(customerDTO.getLastUpdate());
         customer.setActive(customerDTO.getActive());
+        customer.setGender(customerDTO.getGender());
 
         return customer;
     }

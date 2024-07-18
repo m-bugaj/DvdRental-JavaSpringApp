@@ -91,5 +91,9 @@ public class Customer {
     @Builder.Default
     private List<Payment> payments = new ArrayList<>();
 
+    @Column(nullable = false)
+    @Builder.Default
+    private String gender = "undefined";
+
 
 }

@@ -10,15 +10,14 @@ import com.example.dvdRental.model.Store;
 public class StaffConverter {
     public static StaffDTO toDTO(Staff staff) {
         AddressDTO addressDTO = AddressConverter.toDTO(staff.getAddress());
-        StoreDTO storeDTO = StoreConverter.toDTO(staff.getStore());
+//        StoreDTO storeDTO = StoreConverter.toDTO(staff.getStore());
         StaffDTO staffDTO = new StaffDTO();
-
         staffDTO.setStaffId(staff.getStaffId());
         staffDTO.setFirstName(staff.getFirstName());
         staffDTO.setLastName(staff.getLastName());
         staffDTO.setAddress(addressDTO);
         staffDTO.setEmail(staff.getEmail());
-        staffDTO.setStore(storeDTO);
+        staffDTO.setStoreId(staffDTO.getStoreId());
         staffDTO.setActive(staff.getActive());
         staffDTO.setUsername(staff.getUsername());
         staffDTO.setPassword(staff.getPassword());
@@ -30,15 +29,14 @@ public class StaffConverter {
 
     public static Staff toEntity(StaffDTO staffDTO) {
         Address address = AddressConverter.toEntity(staffDTO.getAddress());
-        Store store = StoreConverter.toEntity(staffDTO.getStore());
+//        Store store = StoreConverter.toEntity(staffDTO.getStore());
         Staff staff = new Staff();
-
         staff.setStaffId(staffDTO.getStaffId());
         staff.setFirstName(staffDTO.getFirstName());
         staff.setLastName(staffDTO.getLastName());
         staff.setAddress(address);
         staff.setEmail(staffDTO.getEmail());
-        staff.setStore(store);
+        staff.setStoreId(staffDTO.getStoreId());
         staff.setActive(staffDTO.getActive());
         staff.setUsername(staffDTO.getUsername());
         staff.setPassword(staffDTO.getPassword());

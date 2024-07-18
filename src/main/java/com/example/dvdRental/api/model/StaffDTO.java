@@ -17,7 +17,7 @@ public class StaffDTO {
     private String lastName;
     private AddressDTO address;
     private String email;
-    private StoreDTO store;
+    private Integer storeId;
     private Boolean active;
     private String username;
     private String password;

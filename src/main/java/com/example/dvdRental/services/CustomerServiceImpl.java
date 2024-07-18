@@ -14,7 +14,9 @@ import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
 import com.example.dvdRental.repositories.StoreRepository;
 
+import com.example.dvdRental.util.responses.FindGenderResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -25,6 +27,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Properties;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,6 +36,12 @@ public class CustomerServiceImpl implements CustomerService {
     private final StoreRepository storeRepository;
     private final AddressRepository addressRepository;
     private final CustomerMapper customerMapper;
+
+    @Value("${externalApi.disify.url}")
+    private String disifyUrl;
+
+    @Value("${externalApi.findGender.url}")
+    private String findGenderUrl;
 
     @Autowired
     private final RestTemplate restTemplate;
@@ -121,6 +130,8 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException, DisposableEmailException {
         String email = postCustomerDTO.getEmail();
 
+        System.out.println(disifyUrl);
+
         DisifyResponse disifyResponse = this.checkEmail(email);
 
         if (disifyResponse.isDisposable()) {
@@ -170,6 +181,12 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setActive(postCustomerDTO.getActive());
         customer.setStore(storeOptional.get());
         customer.setAddress(addressOptional.get());
+
+        String gender = this.findGender(firstName).getGender();
+        if (gender != null) {
+            customer.setGender(gender);
+        }
+
 
         customerRepository.save(customer);
 
@@ -343,8 +360,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public DisifyResponse checkEmail(String email) {
-        String url = "https://www.disify.com/api/email/" + email;
+        String url = disifyUrl + email;
         ResponseEntity<DisifyResponse> response = restTemplate.getForEntity(url, DisifyResponse.class);
+        return response.getBody();
+    }
+
+    public FindGenderResponse findGender(String firstName) {
+        String url = findGenderUrl + firstName;
+        ResponseEntity<FindGenderResponse> response = restTemplate.getForEntity(url, FindGenderResponse.class);
         return response.getBody();
     }
 }

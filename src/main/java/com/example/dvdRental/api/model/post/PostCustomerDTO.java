@@ -19,4 +19,5 @@ public class PostCustomerDTO {
 //    private LocalDate createDate;
 //    private Timestamp lastUpdate;
     private Integer active;
+//    private String gender;
 }

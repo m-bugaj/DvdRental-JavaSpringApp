@@ -1,8 +1,8 @@
 spring:
   application:
-    name: dvdRental
+    name: dvdRentalv2
   datasource:
-    url: jdbc:postgresql://localhost:5432/dvdrental
+    url: jdbc:postgresql://localhost:5432/dvdRentalv2
     username: postgres
     password: '&`Cqy!D1:GDV'
   jpa:

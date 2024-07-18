@@ -25,11 +25,19 @@ public class Store {
     @Column(name = "store_id")
     private Integer storeId;
 
-    @Column(
+    @ManyToOne
+    @JoinColumn(
             name = "manager_staff_id",
+            referencedColumnName = "staff_id",
             nullable = false
     )
-    private Integer managerStaffId;
+    private Staff managerStaff;
+
+//    @Column(
+//            name = "manager_staff_id",
+//            nullable = false
+//    )
+//    private Integer managerStaffId;
 
     @ManyToOne
     @JoinColumn(
@@ -45,8 +53,8 @@ public class Store {
     )
     private Timestamp lastUpdate = Timestamp.valueOf(LocalDateTime.now());
 
-    @OneToOne(mappedBy = "store")
-    private Staff staff;
+//    @OneToOne(mappedBy = "store")
+//    private Staff staff;
 
 //    @OneToMany(mappedBy = "store")
 //    private List<Inventory> inventories = new ArrayList<>();

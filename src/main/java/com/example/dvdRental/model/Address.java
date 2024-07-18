@@ -55,7 +55,7 @@ public class Address {
 
     @OneToMany(mappedBy = "address")
     @Builder.Default
-    private List<Staff> Staffs = new ArrayList<>();
+    private List<Staff> staffs = new ArrayList<>();
 
     @OneToMany(mappedBy = "address")
     @Builder.Default
