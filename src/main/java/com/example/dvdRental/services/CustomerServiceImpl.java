@@ -9,6 +9,8 @@ import com.example.dvdRental.exceptions.DuplicateDataException;
 import com.example.dvdRental.exceptions.InvalidDataException;
 import com.example.dvdRental.exceptions.NotFoundException;
 import com.example.dvdRental.model.*;
+import com.example.dvdRental.services.externalApi.DisifyService;
+import com.example.dvdRental.services.externalApi.FindGenderService;
 import com.example.dvdRental.util.responses.DisifyResponse;
 import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
@@ -36,28 +38,23 @@ public class CustomerServiceImpl implements CustomerService {
     private final StoreRepository storeRepository;
     private final AddressRepository addressRepository;
     private final CustomerMapper customerMapper;
-
-    @Value("${externalApi.disify.url}")
-    private String disifyUrl;
-
-    @Value("${externalApi.findGender.url}")
-    private String findGenderUrl;
-
-    @Autowired
-    private final RestTemplate restTemplate;
+    private final DisifyService disifyService;
+    private final FindGenderService findGenderService;
 
     public CustomerServiceImpl(
             CustomerRepository customerRepository,
             StoreRepository storeRepository,
             AddressRepository addressRepository,
             CustomerMapper customerMapper,
-            RestTemplate restTemplate
-    ) {
+            DisifyService disifyService,
+            FindGenderService findGenderService
+            ) {
         this.customerRepository = customerRepository;
         this.storeRepository = storeRepository;
         this.addressRepository = addressRepository;
         this.customerMapper = customerMapper;
-        this.restTemplate = restTemplate;
+        this.disifyService = disifyService;
+        this.findGenderService = findGenderService;
     }
 
     @Override
@@ -127,12 +124,16 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO createNewCustomer(PostCustomerDTO postCustomerDTO) throws InvalidDataException, DuplicateDataException, NotFoundException, DisposableEmailException {
+    public CustomerDTO createNewCustomer(
+            PostCustomerDTO postCustomerDTO
+    ) throws
+            InvalidDataException,
+            DuplicateDataException,
+            NotFoundException,
+            DisposableEmailException {
         String email = postCustomerDTO.getEmail();
 
-        System.out.println(disifyUrl);
-
-        DisifyResponse disifyResponse = this.checkEmail(email);
+        DisifyResponse disifyResponse = disifyService.checkEmail(email);
 
         if (disifyResponse.isDisposable()) {
             throw new DisposableEmailException(email, "Customer");
@@ -182,7 +183,7 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setStore(storeOptional.get());
         customer.setAddress(addressOptional.get());
 
-        String gender = this.findGender(firstName).getGender();
+        String gender = findGenderService.findGender(firstName).getGender();
         if (gender != null) {
             customer.setGender(gender);
         }
@@ -195,7 +196,12 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDTO updateCustomer(Integer customerId, PostCustomerDTO postCustomerDTO) throws NotFoundException, InvalidDataException {
+    public CustomerDTO updateCustomer(
+            Integer customerId,
+            PostCustomerDTO postCustomerDTO
+    ) throws
+            NotFoundException,
+            InvalidDataException {
         Integer storeId = postCustomerDTO.getStoreId();
         Integer addressId = postCustomerDTO.getAddressId();
 
@@ -357,17 +363,5 @@ public class CustomerServiceImpl implements CustomerService {
             case "country" -> "address.city.country.country";
             default -> order.getProperty();
         };
-    }
-
-    public DisifyResponse checkEmail(String email) {
-        String url = disifyUrl + email;
-        ResponseEntity<DisifyResponse> response = restTemplate.getForEntity(url, DisifyResponse.class);
-        return response.getBody();
-    }
-
-    public FindGenderResponse findGender(String firstName) {
-        String url = findGenderUrl + firstName;
-        ResponseEntity<FindGenderResponse> response = restTemplate.getForEntity(url, FindGenderResponse.class);
-        return response.getBody();
     }
 }

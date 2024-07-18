@@ -56,7 +56,7 @@ public class CustomerApiController {
 //    }
 
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<?> createNewCustomer(@RequestBody PostCustomerDTO postCustomerDTO) {
         try {
             return new ResponseEntity<CustomerDTO>(customerService.createNewCustomer(postCustomerDTO), HttpStatus.CREATED);
