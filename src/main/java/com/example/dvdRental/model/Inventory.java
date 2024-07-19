@@ -32,12 +32,11 @@ public class Inventory {
     )
     private Film film;
 
-    @ManyToOne
     @JoinColumn(
             name = "store_id",
             nullable = false
     )
-    private Store store;
+    private Integer storeId;
 
     @Builder.Default
     @Column(

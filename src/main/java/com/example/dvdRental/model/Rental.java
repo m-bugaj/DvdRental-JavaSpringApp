@@ -52,11 +52,9 @@ public class Rental {
     )
     private Customer customer;
 
-    @Column(
-            name = "return_date",
-            nullable = false
-    )
-    private Timestamp returnDate;
+    @Column(name = "return_date")
+    @Builder.Default
+    private Timestamp returnDate = null;
 
     @ManyToOne
     @JoinColumn(

@@ -2,6 +2,8 @@ package com.example.dvdRental.api.controllers;
 
 import com.example.dvdRental.api.model.AddressDTO;
 import com.example.dvdRental.api.model.RentalDTO;
+import com.example.dvdRental.api.model.post.PostCustomerDTO;
+import com.example.dvdRental.api.model.post.PostRentalDTO;
 import com.example.dvdRental.services.RentalService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,8 +31,8 @@ public class RentalApiController {
         return rentalService.findRentalById(rentalId);
     }
 
-    @PostMapping
-    public ResponseEntity<RentalDTO> createNewRental(@RequestBody RentalDTO rentalDTO) {
-        return new ResponseEntity<RentalDTO>(rentalService.createNewRental(rentalDTO), HttpStatus.CREATED);
+    @PostMapping("/create")
+    public ResponseEntity<RentalDTO> createNewRental(@RequestBody PostRentalDTO postRentalDTO) {
+        return new ResponseEntity<RentalDTO>(rentalService.createNewRental(postRentalDTO), HttpStatus.CREATED);
     }
 }

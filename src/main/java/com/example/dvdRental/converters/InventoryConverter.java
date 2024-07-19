@@ -10,12 +10,12 @@ import com.example.dvdRental.model.Store;
 public class InventoryConverter {
     public static InventoryDTO toDTO(Inventory inventory) {
         FilmDTO filmDTO = FilmConverter.toDTO(inventory.getFilm());
-        StoreDTO storeDTO = StoreConverter.toDTO(inventory.getStore());
+//        StoreDTO storeDTO = StoreConverter.toDTO(inventory.getStore());
         InventoryDTO inventoryDTO = new InventoryDTO();
 
         inventoryDTO.setInventoryId(inventory.getInventoryId());
         inventoryDTO.setFilm(filmDTO);
-        inventoryDTO.setStore(storeDTO);
+        inventoryDTO.setStoreId(inventory.getStoreId());
         inventoryDTO.setLastUpdate(inventory.getLastUpdate());
 
         return inventoryDTO;
@@ -23,12 +23,12 @@ public class InventoryConverter {
 
     public static Inventory toEntity(InventoryDTO inventoryDTO) {
         Film film = FilmConverter.toEntity(inventoryDTO.getFilm());
-        Store store = StoreConverter.toEntity(inventoryDTO.getStore());
+//        Store store = StoreConverter.toEntity(inventoryDTO.getStoreId());
         Inventory inventory = new Inventory();
 
         inventory.setInventoryId(inventoryDTO.getInventoryId());
         inventory.setFilm(film);
-        inventory.setStore(store);
+        inventory.setStoreId(inventory.getStoreId());
         inventory.setLastUpdate(inventoryDTO.getLastUpdate());
 
         return inventory;

@@ -1,6 +1,8 @@
 package com.example.dvdRental.services;
 
 import com.example.dvdRental.api.model.RentalDTO;
+import com.example.dvdRental.api.model.post.PostRentalDTO;
+import com.example.dvdRental.exceptions.NotFoundException;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +12,7 @@ public interface RentalService {
 
     Optional<RentalDTO> findRentalById(Integer rentalId);
 
-    RentalDTO createNewRental(RentalDTO rentalDTO);
+    RentalDTO createNewRental(PostRentalDTO postRentalDTO);
 
     RentalDTO updateRental(Integer rentalId, RentalDTO rentalDTO);
 

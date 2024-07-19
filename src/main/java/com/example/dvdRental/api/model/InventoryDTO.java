@@ -14,6 +14,6 @@ import java.sql.Timestamp;
 public class InventoryDTO {
     private Integer inventoryId;
     private FilmDTO film;
-    private StoreDTO store;
+    private Integer storeId;
     private Timestamp lastUpdate;
 }

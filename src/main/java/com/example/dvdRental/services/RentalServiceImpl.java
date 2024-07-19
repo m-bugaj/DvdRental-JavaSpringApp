@@ -1,13 +1,18 @@
 package com.example.dvdRental.services;
 
+import com.example.dvdRental.api.model.InventoryDTO;
 import com.example.dvdRental.api.model.RentalDTO;
+import com.example.dvdRental.api.model.post.PostRentalDTO;
 import com.example.dvdRental.converters.AddressConverter;
 import com.example.dvdRental.converters.RentalConverter;
-import com.example.dvdRental.model.Address;
-import com.example.dvdRental.model.Rental;
-import com.example.dvdRental.repositories.RentalRepository;
+import com.example.dvdRental.exceptions.NotFoundException;
+import com.example.dvdRental.model.*;
+import com.example.dvdRental.repositories.*;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,9 +20,23 @@ import java.util.stream.Collectors;
 @Service
 public class RentalServiceImpl implements RentalService {
     private final RentalRepository rentalRepository;
+    private final InventoryRepository inventoryRepository;
+    private final CustomerRepository customerRepository;
+    private final StaffRepository staffRepository;
+    private final FilmRepository filmRepository;
 
-    public RentalServiceImpl(RentalRepository rentalRepository) {
+    public RentalServiceImpl(
+            RentalRepository rentalRepository,
+            InventoryRepository inventoryRepository,
+            CustomerRepository customerRepository,
+            StaffRepository staffRepository,
+            FilmRepository filmRepository
+    ) {
         this.rentalRepository = rentalRepository;
+        this.inventoryRepository = inventoryRepository;
+        this.customerRepository = customerRepository;
+        this.staffRepository = staffRepository;
+        this.filmRepository = filmRepository;
     }
 
 
@@ -40,8 +59,43 @@ public class RentalServiceImpl implements RentalService {
     }
 
     @Override
-    public RentalDTO createNewRental(RentalDTO rentalDTO) {
-        Rental rental = RentalConverter.toEntity(rentalDTO);
+    public RentalDTO createNewRental(PostRentalDTO postRentalDTO) {
+
+        List<Inventory> inventories = inventoryRepository.findInventoriesByFilmTitleAndStoreId(
+                postRentalDTO.getFilmTitle(),
+                postRentalDTO.getStoreId()
+        );
+
+        List<Rental> rentals = rentalRepository.findRentalsByInventoriesWhereReturnDateIsNotNull(inventories);
+        if (rentals.isEmpty()) {
+//            throw new NotFoundException("Inventory");
+            return null;
+        }
+        Inventory availableInventory = rentals.getLast().getInventory();
+
+        Optional<Film> filmOptional = filmRepository.findFirstByTitle(postRentalDTO.getFilmTitle());
+        if (filmOptional.isEmpty()) {
+            return null;
+        }
+        Film film = filmOptional.get();
+
+        Optional<Customer> customerOptional = customerRepository.findCustomerByEmail(postRentalDTO.getEmail());
+        if (customerOptional.isEmpty()) {
+            return null;
+        }
+        Customer customer = customerOptional.get();
+
+        Optional<Staff> staffOptional = staffRepository.findByEmail(postRentalDTO.getStaffEmail());
+        if (staffOptional.isEmpty()) {
+            return null;
+        }
+        Staff staff = staffOptional.get();
+
+        Rental rental = new Rental();
+        rental.setInventory(availableInventory);
+        rental.setCustomer(customer);
+        rental.setStaff(staff);
+        rental.setRentalDate(Timestamp.valueOf(LocalDateTime.now()));
         Rental savedRental = rentalRepository.save(rental);
 
         return RentalConverter.toDTO(savedRental);

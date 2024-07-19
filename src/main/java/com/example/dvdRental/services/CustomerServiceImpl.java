@@ -16,20 +16,14 @@ import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
 import com.example.dvdRental.repositories.StoreRepository;
 
-import com.example.dvdRental.util.responses.FindGenderResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Properties;
 import java.util.stream.Collectors;
 
 @Service
@@ -89,7 +83,7 @@ public class CustomerServiceImpl implements CustomerService {
         Optional<Customer> customerOptional = customerRepository.findCustomerByCustomerId(customerId);
 
         if (customerOptional.isEmpty()) {
-            throw new NotFoundException("CustomerId", customerId);
+            throw new NotFoundException("CustomerId", "ID", customerId.toString());
         }
 
         return this.mapToCustomerInfoDto(customerOptional.get());
@@ -157,11 +151,11 @@ public class CustomerServiceImpl implements CustomerService {
         }
 
         if (addressOptional.isEmpty()) {
-            throw new NotFoundException("Address", addressId);
+            throw new NotFoundException("Address", "ID", addressId.toString());
         }
 
         if (storeOptional.isEmpty()) {
-            throw new NotFoundException("Store", storeId);
+            throw new NotFoundException("Store", "ID", storeId.toString());
         }
 
         if (customerRepository.findCustomerByEmail(postCustomerDTO.getEmail()).isPresent()) {
@@ -220,11 +214,11 @@ public class CustomerServiceImpl implements CustomerService {
         }
 
         if (addressOptional.isEmpty()) {
-            throw new NotFoundException("Address", addressId);
+            throw new NotFoundException("Address", "ID", addressId.toString());
         }
 
         if (storeOptional.isEmpty()) {
-            throw new NotFoundException("Store", storeId);
+            throw new NotFoundException("Store", "ID", storeId.toString());
         }
         System.out.println("ID: " + customerId);
         Customer customer = new Customer();
@@ -249,7 +243,7 @@ public class CustomerServiceImpl implements CustomerService {
         Optional<Customer> customerOptional = customerRepository.findById(customerId);
 
         if (customerOptional.isEmpty()) {
-            throw new NotFoundException("Customer", customerId);
+            throw new NotFoundException("Customer", "ID", customerId.toString());
         } else {
             customerRepository.deleteById(customerId);
         }
