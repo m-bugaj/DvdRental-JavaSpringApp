@@ -12,7 +12,7 @@ public interface RentalService {
 
     Optional<RentalDTO> findRentalById(Integer rentalId);
 
-    RentalDTO createNewRental(PostRentalDTO postRentalDTO);
+    RentalDTO createNewRental(PostRentalDTO postRentalDTO) throws NotFoundException;
 
     RentalDTO updateRental(Integer rentalId, RentalDTO rentalDTO);
 

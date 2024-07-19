@@ -1,5 +1,6 @@
 package com.example.dvdRental.services.externalApi;
 
+import com.example.dvdRental.exceptions.ExternalApiException;
 import com.example.dvdRental.util.responses.FindGenderResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,9 +21,15 @@ public class FindGenderService {
         this.restTemplate = restTemplate;
     }
 
-    public FindGenderResponse findGender(String firstName) {
-        String url = findGenderUrl + firstName;
-        ResponseEntity<FindGenderResponse> response = restTemplate.getForEntity(url, FindGenderResponse.class);
-        return response.getBody();
+    public FindGenderResponse findGender(String firstName) throws ExternalApiException {
+        try {
+            String url = findGenderUrl + firstName;
+            ResponseEntity<FindGenderResponse> response = restTemplate.getForEntity(url, FindGenderResponse.class);
+            return response.getBody();
+        } catch (Exception e) {
+            String url = findGenderUrl + firstName;
+            throw new ExternalApiException("Find Gender", url);
+        }
+
     }
 }

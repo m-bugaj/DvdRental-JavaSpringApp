@@ -4,6 +4,7 @@ import com.example.dvdRental.api.model.AddressDTO;
 import com.example.dvdRental.api.model.RentalDTO;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
 import com.example.dvdRental.api.model.post.PostRentalDTO;
+import com.example.dvdRental.exceptions.ApiExceptionHandler;
 import com.example.dvdRental.services.RentalService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +33,12 @@ public class RentalApiController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<RentalDTO> createNewRental(@RequestBody PostRentalDTO postRentalDTO) {
-        return new ResponseEntity<RentalDTO>(rentalService.createNewRental(postRentalDTO), HttpStatus.CREATED);
+    public ResponseEntity<?> createNewRental(@RequestBody PostRentalDTO postRentalDTO) {
+        try{
+            return new ResponseEntity<RentalDTO>(rentalService.createNewRental(postRentalDTO), HttpStatus.CREATED);
+        } catch (Exception e) {
+            return ApiExceptionHandler.apiHandleException(e);
+        }
+
     }
 }

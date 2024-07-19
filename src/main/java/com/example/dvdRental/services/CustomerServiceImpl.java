@@ -4,10 +4,7 @@ import com.example.dvdRental.api.mapper.CustomerMapper;
 import com.example.dvdRental.api.model.*;
 import com.example.dvdRental.api.model.post.PostCustomerDTO;
 import com.example.dvdRental.converters.CustomerConverter;
-import com.example.dvdRental.exceptions.DisposableEmailException;
-import com.example.dvdRental.exceptions.DuplicateDataException;
-import com.example.dvdRental.exceptions.InvalidDataException;
-import com.example.dvdRental.exceptions.NotFoundException;
+import com.example.dvdRental.exceptions.*;
 import com.example.dvdRental.model.*;
 import com.example.dvdRental.services.externalApi.DisifyService;
 import com.example.dvdRental.services.externalApi.FindGenderService;
@@ -124,7 +121,8 @@ public class CustomerServiceImpl implements CustomerService {
             InvalidDataException,
             DuplicateDataException,
             NotFoundException,
-            DisposableEmailException {
+            DisposableEmailException, 
+            ExternalApiException {
         String email = postCustomerDTO.getEmail();
 
         DisifyResponse disifyResponse = disifyService.checkEmail(email);

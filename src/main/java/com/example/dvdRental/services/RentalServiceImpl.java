@@ -59,7 +59,7 @@ public class RentalServiceImpl implements RentalService {
     }
 
     @Override
-    public RentalDTO createNewRental(PostRentalDTO postRentalDTO) {
+    public RentalDTO createNewRental(PostRentalDTO postRentalDTO) throws NotFoundException {
 
         List<Inventory> inventories = inventoryRepository.findInventoriesByFilmTitleAndStoreId(
                 postRentalDTO.getFilmTitle(),
@@ -68,26 +68,25 @@ public class RentalServiceImpl implements RentalService {
 
         List<Rental> rentals = rentalRepository.findRentalsByInventoriesWhereReturnDateIsNotNull(inventories);
         if (rentals.isEmpty()) {
-//            throw new NotFoundException("Inventory");
-            return null;
+            throw new NotFoundException("Inventories where return date is not null");
         }
         Inventory availableInventory = rentals.getLast().getInventory();
 
         Optional<Film> filmOptional = filmRepository.findFirstByTitle(postRentalDTO.getFilmTitle());
         if (filmOptional.isEmpty()) {
-            return null;
+            throw new NotFoundException("Film", "title", postRentalDTO.getFilmTitle());
         }
         Film film = filmOptional.get();
 
         Optional<Customer> customerOptional = customerRepository.findCustomerByEmail(postRentalDTO.getEmail());
         if (customerOptional.isEmpty()) {
-            return null;
+            throw new NotFoundException("Customer", "email", postRentalDTO.getEmail());
         }
         Customer customer = customerOptional.get();
 
         Optional<Staff> staffOptional = staffRepository.findByEmail(postRentalDTO.getStaffEmail());
         if (staffOptional.isEmpty()) {
-            return null;
+            throw new NotFoundException("Staff", "email", postRentalDTO.getStaffEmail());
         }
         Staff staff = staffOptional.get();
 

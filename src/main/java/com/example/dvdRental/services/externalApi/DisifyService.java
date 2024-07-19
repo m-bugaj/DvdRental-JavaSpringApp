@@ -1,5 +1,6 @@
 package com.example.dvdRental.services.externalApi;
 
+import com.example.dvdRental.exceptions.ExternalApiException;
 import com.example.dvdRental.util.responses.DisifyResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,9 +21,15 @@ public class DisifyService {
         this.restTemplate = restTemplate;
     }
 
-    public DisifyResponse checkEmail(String email) {
-        String url = disifyUrl + email;
-        ResponseEntity<DisifyResponse> response = restTemplate.getForEntity(url, DisifyResponse.class);
-        return response.getBody();
+    public DisifyResponse checkEmail(String email) throws ExternalApiException {
+        try {
+            String url = disifyUrl + email;
+            ResponseEntity<DisifyResponse> response = restTemplate.getForEntity(url, DisifyResponse.class);
+            return response.getBody();
+        } catch (Exception e) {
+            String url = disifyUrl + email;
+            throw new ExternalApiException("Disify", url);
+        }
+
     }
 }
