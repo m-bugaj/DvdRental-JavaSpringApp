@@ -97,7 +97,34 @@ public class RentalServiceImpl implements RentalService {
         rental.setRentalDate(Timestamp.valueOf(LocalDateTime.now()));
         Rental savedRental = rentalRepository.save(rental);
 
+        customer.setActive(1);
+        customerRepository.save(customer);
+
         return RentalConverter.toDTO(savedRental);
+    }
+
+    @Override
+    public RentalDTO returnRental(Integer rentalId) throws NotFoundException {
+        Optional<Rental> rentalOptional = rentalRepository.findById(rentalId);
+        if (rentalOptional.isEmpty()) {
+            throw new NotFoundException("Rental", "Id", rentalId.toString());
+        }
+        Rental rental = rentalOptional.get();
+//        Rental rental = RentalConverter.toEntity(rentalDTO);
+        rental.setReturnDate(Timestamp.valueOf(LocalDateTime.now()));
+        rentalRepository.save(rental);
+
+        Optional<Customer> customerOptional = customerRepository
+                .findCustomerByCustomerId(rental.getCustomer().getCustomerId());
+
+        if (customerOptional.isEmpty()) {
+            throw new NotFoundException("Customer", "Id", rental.getCustomer().getCustomerId().toString());
+        }
+        Customer customer = customerOptional.get();
+        customer.setActive(1);
+        customerRepository.save(customer);
+
+        return RentalConverter.toDTO(rental);
     }
 
     @Override

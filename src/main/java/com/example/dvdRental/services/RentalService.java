@@ -14,6 +14,8 @@ public interface RentalService {
 
     RentalDTO createNewRental(PostRentalDTO postRentalDTO) throws NotFoundException;
 
+    RentalDTO returnRental(Integer rentalId) throws NotFoundException;
+
     RentalDTO updateRental(Integer rentalId, RentalDTO rentalDTO);
 
     void deleteRental(Integer rentalId);

@@ -39,6 +39,14 @@ public class RentalApiController {
         } catch (Exception e) {
             return ApiExceptionHandler.apiHandleException(e);
         }
+    }
 
+    @PutMapping("/return/{returnId}")
+    public ResponseEntity<?> returnRental(@RequestParam Integer returnId) {
+        try {
+            return new ResponseEntity<RentalDTO>(rentalService.returnRental(returnId), HttpStatus.OK);
+        } catch (Exception e) {
+            return ApiExceptionHandler.apiHandleException(e);
+        }
     }
 }
