@@ -29,4 +29,14 @@ public interface RentalRepository extends JpaRepository<Rental, Integer> {
     List<Rental> findRentalsByActiveCustomersToInactive(
             @Param("conditionalDate") Timestamp conditionalDate
     );
+
+    @Query(
+            "SELECT r FROM Rental r " +
+                    "WHERE r.returnDate is null " +
+                    "AND r.rentalDate is not null " +
+                    "AND r.rentalDate < :conditionalDate"
+    )
+    List<Rental> findActiveRentalsForAtLeastWeek (
+            @Param("conditionalDate") Timestamp conditionalDate
+    );
 }
