@@ -13,3 +13,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 server:
   port: 1111
+
+#logging:
+#  file:
+#    name: logs/myservice.log
+#  logback:
+#    rollingpolicy:
+#      file-name-pattern: logs/myservice.%d{yyyy-MM-dd_HH-mm-ss}.%i.log
+#    max-file-size: 100KB
