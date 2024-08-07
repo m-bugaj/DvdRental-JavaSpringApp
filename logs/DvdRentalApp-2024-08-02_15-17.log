@@ -1,0 +1,1611 @@
+15:17:00.837 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:17:00.848 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:17:02.035 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:17:05.995 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:17:07.691 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1111"]
+15:17:07.751 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 1111 (http) with context path '/'
+15:17:07.847 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:17:07.972 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+15:17:08.443 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+15:17:08.445 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+15:17:08.445 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1722604628439
+15:17:08.451 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): customer-reports
+15:17:08.491 [main] INFO  c.e.dvdRental.DvdRentalApplication - Started DvdRentalApplication in 19.605 seconds (process running for 22.311)
+15:17:09.108 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:09.110 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:09.110 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:09.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:09.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:09.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:09.379 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:09.381 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:09.381 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:09.660 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:09.661 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:09.661 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:10.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:10.050 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:10.050 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:10.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:10.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:10.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:11.812 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:11.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:11.814 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:12.820 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:12.821 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:12.821 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:13.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:13.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:13.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:14.840 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:14.840 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:14.840 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:15.778 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:15.779 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:15.779 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:16.828 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:16.828 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:16.828 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:17.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:17.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:17.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:18.858 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:18.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:18.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:19.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:19.860 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:19.860 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:20.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:20.862 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:20.862 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:21.860 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:21.860 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:21.860 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:22.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:22.724 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:23.757 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:23.758 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:23.758 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:24.760 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:24.760 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:24.760 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:25.696 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:25.696 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:25.696 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:26.705 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:26.705 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:26.705 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:27.766 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:27.767 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:27.767 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:28.807 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:28.807 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:28.807 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:29.817 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:29.818 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:29.818 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:30.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:30.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:30.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:31.150 [scheduling-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = dvdRentalv2-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+15:17:31.152 [scheduling-1] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+15:17:31.184 [scheduling-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=dvdRentalv2-producer-1] Instantiated an idempotent producer.
+15:17:31.256 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+15:17:31.257 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+15:17:31.259 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1722604651255
+15:17:31.272 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:31.272 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:31.272 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:31.378 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:31.379 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:31.379 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:31.488 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:31.488 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:31.488 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:31.658 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:31.658 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:31.658 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:31.768 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:31.769 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:31.769 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:32.023 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:32.025 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:32.026 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:32.773 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:32.774 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:32.775 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:32.784 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:32.784 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:32.784 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:33.772 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:33.772 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:33.772 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:33.788 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:33.788 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:33.788 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:34.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:34.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:34.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:34.802 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:34.802 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:34.802 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:35.676 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:35.676 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:35.676 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:35.816 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:35.816 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:35.816 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:36.549 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:36.549 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:36.549 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:36.803 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:36.805 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:36.806 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:37.606 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:37.606 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:37.607 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:37.668 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:37.669 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:37.669 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:38.523 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:38.523 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:38.525 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:38.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:38.627 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:38.627 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:39.506 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:39.506 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:39.506 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:39.679 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:39.679 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:39.679 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:40.492 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:40.494 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:40.494 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:40.680 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:40.680 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:40.680 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:41.538 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:41.538 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:41.538 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:41.616 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:41.616 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:41.616 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:42.455 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:42.455 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:42.455 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:42.672 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:42.672 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:42.672 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:43.498 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:43.498 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:43.498 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:43.686 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:43.686 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:43.686 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:44.537 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:44.538 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:44.539 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:44.693 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:44.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:44.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:45.528 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:45.528 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:45.528 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:45.701 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:45.702 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:45.703 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:46.577 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:46.579 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:46.579 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:46.721 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:46.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:46.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:47.503 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:47.503 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:47.503 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:47.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:47.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:47.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:48.534 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:48.534 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:48.534 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:48.549 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:48.549 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:48.549 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:49.448 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:49.451 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:49.452 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:49.537 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:49.537 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:49.538 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:50.503 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:50.504 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:50.505 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:50.534 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:50.536 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:50.537 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:51.408 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+15:17:51.409 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:51.409 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:51.417 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:51.417 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:51.417 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:52.339 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Node -1 disconnected.
+15:17:52.339 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+15:17:52.340 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+15:17:52.767 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Error while fetching metadata with correlation id 2 : {customer-reports=INVALID_REPLICATION_FACTOR}
+15:17:53.426 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Error while fetching metadata with correlation id 2 : {customer-reports=LEADER_NOT_AVAILABLE}
+15:17:53.428 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=dvdRentalv2-producer-1] Cluster ID: 7rNOr3vDTlyNIc0BOjj4Dg
+15:17:53.432 [kafka-producer-network-thread | dvdRentalv2-producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=dvdRentalv2-producer-1] ProducerId set to 1000 with epoch 0
+15:17:53.564 [kafka-producer-network-thread | dvdRentalv2-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=dvdRentalv2-producer-1] Error while fetching metadata with correlation id 6 : {customer-reports=LEADER_NOT_AVAILABLE}
+15:17:53.649 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-group_id-1, groupId=group_id] Error while fetching metadata with correlation id 5 : {customer-reports=LEADER_NOT_AVAILABLE}
+15:17:53.649 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: 7rNOr3vDTlyNIc0BOjj4Dg
+15:17:53.857 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator 10.132.15.83:9092 (id: 2147483647 rack: null)
+15:17:53.861 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+15:17:53.908 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id: consumer-group_id-1-94d85d30-0f1d-43fa-b335-40304e15b32d
+15:17:53.909 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+15:17:53.976 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=3, memberId='consumer-group_id-1-94d85d30-0f1d-43fa-b335-40304e15b32d', protocol='range'}
+15:17:53.993 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 3: {consumer-group_id-1-94d85d30-0f1d-43fa-b335-40304e15b32d=Assignment(partitions=[customer-reports-0])}
+15:17:54.027 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=3, memberId='consumer-group_id-1-94d85d30-0f1d-43fa-b335-40304e15b32d', protocol='range'}
+15:17:54.028 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[customer-reports-0])
+15:17:54.032 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: customer-reports-0
+15:17:54.056 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition customer-reports-0 to the committed offset FetchPosition{offset=7360, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[10.132.15.83:9092 (id: 0 rack: null)], epoch=0}}
+15:17:54.058 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions assigned: [customer-reports-0]
+15:17:54.158 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 512
+Cecil Vines
+cecil.vines@sakilacustomer.org
+Wypożyczone filmy:
+- Amadeus Holy - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 1
+Mary Smith
+mary.smith@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 15 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 516
+Elmer Noe
+elmer.noe@sakilacustomer.org
+Wypożyczone filmy:
+- Falcon Volume - Wypozyczono 19 dni temu
+- Minority Kiss - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 5
+Elizabeth Brown
+elizabeth.brown@sakilacustomer.org
+Wypożyczone filmy:
+- Gables Metropolis - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 263
+Hilda Hopkins
+hilda.hopkins@sakilacustomer.org
+Wypożyczone filmy:
+- Earth Vision - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 264
+Gwendolyn May
+gwendolyn.may@sakilacustomer.org
+Wypożyczone filmy:
+- Flying Hook - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 521
+Roland South
+roland.south@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 9
+Margaret Moore
+margaret.moore@sakilacustomer.org
+Wypożyczone filmy:
+- Deep Crusade - Wypozyczono 19 dni temu
+
+15:17:54.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 11
+Lisa Anderson
+lisa.anderson@sakilacustomer.org
+Wypożyczone filmy:
+- Bull Shawshank - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 267
+Margie Wade
+margie.wade@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Philadelphia Wife - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 269
+Cassandra Walters
+cassandra.walters@sakilacustomer.org
+Wypożyczone filmy:
+- Princess Giant - Wypozyczono 19 dni temu
+- Theory Mermaid - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 525
+Adrian Clary
+adrian.clary@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 14
+Betty White
+betty.white@sakilacustomer.org
+Wypożyczone filmy:
+- Groundhog Uncut - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 15
+Helen Harris
+helen.harris@sakilacustomer.org
+Wypożyczone filmy:
+- Candidate Perdition - Wypozyczono 19 dni temu
+- Smoking Barbarella - Wypozyczono 19 dni temu
+
+15:17:54.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 527
+Cory Meehan
+cory.meehan@sakilacustomer.org
+Wypożyczone filmy:
+- Jason Trap - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 274
+Naomi Jennings
+naomi.jennings@sakilacustomer.org
+Wypożyczone filmy:
+- Wild Apollo - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 530
+Darryl Ashcraft
+darryl.ashcraft@sakilacustomer.org
+Wypożyczone filmy:
+- Pure Runner - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 532
+Neil Renner
+neil.renner@sakilacustomer.org
+Wypożyczone filmy:
+- World Leathernecks - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 533
+Jessie Milam
+jessie.milam@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 21
+Michelle Clark
+michelle.clark@sakilacustomer.org
+Wypożyczone filmy:
+- Dwarfs Alter - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 22
+Laura Rodriguez
+laura.rodriguez@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:17:54.161 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 534
+Christian Jung
+christian.jung@sakilacustomer.org
+Wypożyczone filmy:
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 279
+Dianne Shelton
+dianne.shelton@sakilacustomer.org
+Wypożyczone filmy:
+- Cat Coneheads - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 23
+Sarah Lewis
+sarah.lewis@sakilacustomer.org
+Wypożyczone filmy:
+- Divine Resurrection - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 537
+Clinton Buford
+clinton.buford@sakilacustomer.org
+Wypożyczone filmy:
+- Scarface Bang - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 282
+Jenny Castro
+jenny.castro@sakilacustomer.org
+Wypożyczone filmy:
+- Volcano Texas - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 284
+Sonia Gregory
+sonia.gregory@sakilacustomer.org
+Wypożyczone filmy:
+- Berets Agent - Wypozyczono 19 dni temu
+- Frida Slipper - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 28
+Cynthia Young
+cynthia.young@sakilacustomer.org
+Wypożyczone filmy:
+- Suspects Quills - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 29
+Angela Hernandez
+angela.hernandez@sakilacustomer.org
+Wypożyczone filmy:
+- Canyon Stock - Wypozyczono 19 dni temu
+
+15:17:54.162 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 287
+Becky Miles
+becky.miles@sakilacustomer.org
+Wypożyczone filmy:
+- Virginian Pluto - Wypozyczono 19 dni temu
+
+15:17:54.164 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 33
+Anna Hill
+anna.hill@sakilacustomer.org
+Wypożyczone filmy:
+- Boulevard Mob - Wypozyczono 19 dni temu
+
+15:17:54.219 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 548
+Allan Cornish
+allan.cornish@sakilacustomer.org
+Wypożyczone filmy:
+- Sundance Invasion - Wypozyczono 19 dni temu
+
+15:17:54.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 550
+Guy Brownlee
+guy.brownlee@sakilacustomer.org
+Wypożyczone filmy:
+- Enough Raging - Wypozyczono 19 dni temu
+
+15:17:54.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 295
+Daisy Bates
+daisy.bates@sakilacustomer.org
+Wypożyczone filmy:
+- Pride Alamo - Wypozyczono 19 dni temu
+
+15:17:54.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 296
+Ramona Hale
+ramona.hale@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:17:54.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 41
+Stephanie Mitchell
+stephanie.mitchell@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:17:54.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 42
+Carolyn Perez
+carolyn.perez@sakilacustomer.org
+Wypożyczone filmy:
+- Torque Bound - Wypozyczono 19 dni temu
+- River Outlaw - Wypozyczono 19 dni temu
+
+15:17:54.221 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 554
+Dwayne Olvera
+dwayne.olvera@sakilacustomer.org
+Wypożyczone filmy:
+- Academy Dinosaur - Wypozyczono 12 dni temu
+
+15:17:54.221 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 43
+Christine Roberts
+christine.roberts@sakilacustomer.org
+Wypożyczone filmy:
+- Pollock Deliverance - Wypozyczono 19 dni temu
+- Motions Details - Wypozyczono 19 dni temu
+
+15:17:54.221 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 44
+Marie Turner
+marie.turner@sakilacustomer.org
+Wypożyczone filmy:
+- American Circus - Wypozyczono 19 dni temu
+
+15:17:54.221 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 300
+John Farnsworth
+john.farnsworth@sakilacustomer.org
+Wypożyczone filmy:
+- Outlaw Hanky - Wypozyczono 19 dni temu
+
+15:17:54.226 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 557
+Felix Gaffney
+felix.gaffney@sakilacustomer.org
+Wypożyczone filmy:
+- Lady Stage - Wypozyczono 19 dni temu
+
+15:17:54.226 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 560
+Jordan Archuleta
+jordan.archuleta@sakilacustomer.org
+Wypożyczone filmy:
+- Pianist Outfield - Wypozyczono 19 dni temu
+- Movie Shakespeare - Wypozyczono 19 dni temu
+
+15:17:54.226 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 561
+Ian Still
+ian.still@sakilacustomer.org
+Wypożyczone filmy:
+- Mockingbird Hollywood - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 52
+Julie Sanchez
+julie.sanchez@sakilacustomer.org
+Wypożyczone filmy:
+- Trading Pinocchio - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 53
+Heather Morris
+heather.morris@sakilacustomer.org
+Wypożyczone filmy:
+- Peach Innocent - Wypozyczono 19 dni temu
+- Lawless Vision - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 568
+Alberto Henning
+alberto.henning@sakilacustomer.org
+Wypożyczone filmy:
+- Vanishing Rocky - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 56
+Gloria Cook
+gloria.cook@sakilacustomer.org
+Wypożyczone filmy:
+- Igby Maker - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 570
+Ivan Cromwell
+ivan.cromwell@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:17:54.228 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 58
+Jean Bell
+jean.bell@sakilacustomer.org
+Wypożyczone filmy:
+- Ridgemont Submarine - Wypozyczono 19 dni temu
+
+15:17:54.232 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 315
+Kenneth Gooden
+kenneth.gooden@sakilacustomer.org
+Wypożyczone filmy:
+- Operation Operation - Wypozyczono 19 dni temu
+
+15:17:54.237 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 60
+Mildred Bailey
+mildred.bailey@sakilacustomer.org
+Wypożyczone filmy:
+- Boogie Amelie - Wypozyczono 19 dni temu
+- Chamber Italian - Wypozyczono 19 dni temu
+
+15:17:54.242 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 317
+Edward Baugh
+edward.baugh@sakilacustomer.org
+Wypożyczone filmy:
+- Armageddon Lost - Wypozyczono 19 dni temu
+
+15:17:54.247 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 576
+Morris Mccarter
+morris.mccarter@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Vanished Garden - Wypozyczono 19 dni temu
+
+15:17:54.253 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 64
+Judith Cox
+judith.cox@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:17:54.258 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 579
+Daryl Larue
+daryl.larue@sakilacustomer.org
+Wypożyczone filmy:
+- Streak Ridgemont - Wypozyczono 19 dni temu
+
+15:17:54.276 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 324
+Gary Coy
+gary.coy@sakilacustomer.org
+Wypożyczone filmy:
+- Chitty Lock - Wypozyczono 19 dni temu
+
+15:17:54.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 69
+Judy Gray
+judy.gray@sakilacustomer.org
+Wypożyczone filmy:
+- Summer Scarface - Wypozyczono 19 dni temu
+
+15:17:54.293 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 582
+Andy Vanhorn
+andy.vanhorn@sakilacustomer.org
+Wypożyczone filmy:
+- Tuxedo Mile - Wypozyczono 19 dni temu
+
+15:17:54.315 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 327
+Larry Thrasher
+larry.thrasher@sakilacustomer.org
+Wypożyczone filmy:
+- Pulp Beverly - Wypozyczono 19 dni temu
+
+15:17:54.316 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 73
+Beverly Brooks
+beverly.brooks@sakilacustomer.org
+Wypożyczone filmy:
+- Shrek License - Wypozyczono 19 dni temu
+
+15:17:54.327 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 585
+Perry Swafford
+perry.swafford@sakilacustomer.org
+Wypożyczone filmy:
+- Devil Desire - Wypozyczono 19 dni temu
+
+15:17:54.335 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 330
+Scott Shelley
+scott.shelley@sakilacustomer.org
+Wypożyczone filmy:
+- Grail Frankenstein - Wypozyczono 19 dni temu
+
+15:17:54.346 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 587
+Sergio Stanfield
+sergio.stanfield@sakilacustomer.org
+Wypożyczone filmy:
+- Camelot Vacation - Wypozyczono 19 dni temu
+
+15:17:54.351 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 75
+Tammy Sanders
+tammy.sanders@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Trouble Date - Wypozyczono 19 dni temu
+- Sleepy Japanese - Wypozyczono 19 dni temu
+
+15:17:54.357 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 334
+Raymond Mcwhorter
+raymond.mcwhorter@sakilacustomer.org
+Wypożyczone filmy:
+- Smoochy Control - Wypozyczono 19 dni temu
+
+15:17:54.361 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 590
+Seth Hannon
+seth.hannon@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 19 dni temu
+
+15:17:54.366 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 335
+Gregory Mauldin
+gregory.mauldin@sakilacustomer.org
+Wypożyczone filmy:
+- Hunger Roof - Wypozyczono 19 dni temu
+
+15:17:54.383 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 80
+Marilyn Ross
+marilyn.ross@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:17:54.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 336
+Joshua Mark
+joshua.mark@sakilacustomer.org
+Wypożyczone filmy:
+- Juggler Hardly - Wypozyczono 19 dni temu
+
+15:17:54.397 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 592
+Terrance Roush
+terrance.roush@sakilacustomer.org
+Wypożyczone filmy:
+- Kick Savannah - Wypozyczono 19 dni temu
+
+15:17:54.403 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 337
+Jerry Jordon
+jerry.jordon@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:17:54.403 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 83
+Louise Jenkins
+louise.jenkins@sakilacustomer.org
+Wypożyczone filmy:
+- Frisco Forrest - Wypozyczono 19 dni temu
+
+15:17:54.409 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 596
+Enrique Forsythe
+enrique.forsythe@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:17:54.416 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 597
+Freddie Duggan
+freddie.duggan@sakilacustomer.org
+Wypożyczone filmy:
+- Ghost Groundhog - Wypozyczono 19 dni temu
+
+15:17:54.423 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 87
+Wanda Patterson
+wanda.patterson@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:17:54.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 91
+Lois Butler
+lois.butler@sakilacustomer.org
+Wypożyczone filmy:
+- Bubble Grosse - Wypozyczono 19 dni temu
+
+15:17:54.434 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 349
+Joe Gilliland
+joe.gilliland@sakilacustomer.org
+Wypożyczone filmy:
+- Amistad Midsummer - Wypozyczono 19 dni temu
+
+15:17:54.441 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 94
+Norma Gonzales
+norma.gonzales@sakilacustomer.org
+Wypożyczone filmy:
+- Sleeping Suspects - Wypozyczono 19 dni temu
+
+15:17:54.446 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 352
+Albert Crouse
+albert.crouse@sakilacustomer.org
+Wypożyczone filmy:
+- Varsity Trip - Wypozyczono 19 dni temu
+
+15:17:54.451 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 354
+Justin Ngo
+justin.ngo@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Trojan Tomorrow - Wypozyczono 19 dni temu
+
+15:17:54.457 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 99
+Emily Diaz
+emily.diaz@sakilacustomer.org
+Wypożyczone filmy:
+- Connection Microcosmos - Wypozyczono 19 dni temu
+
+15:17:54.475 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 355
+Terry Grissom
+terry.grissom@sakilacustomer.org
+Wypożyczone filmy:
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:17:54.482 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 100
+Robin Hayes
+robin.hayes@sakilacustomer.org
+Wypożyczone filmy:
+- Bound Cheaper - Wypozyczono 19 dni temu
+
+15:17:54.490 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 101
+Peggy Myers
+peggy.myers@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+
+15:17:54.498 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 359
+Willie Markham
+willie.markham@sakilacustomer.org
+Wypożyczone filmy:
+- Center Dinosaur - Wypozyczono 19 dni temu
+
+15:17:54.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 361
+Lawrence Lawton
+lawrence.lawton@sakilacustomer.org
+Wypożyczone filmy:
+- Insects Stone - Wypozyczono 19 dni temu
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:17:54.513 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 107
+Florence Woods
+florence.woods@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+- Blade Polish - Wypozyczono 19 dni temu
+
+15:17:54.520 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 108
+Tracy Cole
+tracy.cole@sakilacustomer.org
+Wypożyczone filmy:
+- Ali Forever - Wypozyczono 19 dni temu
+
+15:17:54.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 366
+Brandon Huey
+brandon.huey@sakilacustomer.org
+Wypożyczone filmy:
+- Ace Goldfinger - Wypozyczono 19 dni temu
+
+15:17:54.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 111
+Carmen Owens
+carmen.owens@sakilacustomer.org
+Wypożyczone filmy:
+- Affair Prejudice - Wypozyczono 19 dni temu
+
+15:17:54.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 369
+Fred Wheat
+fred.wheat@sakilacustomer.org
+Wypożyczone filmy:
+- Sweethearts Suspects - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 114
+Grace Ellis
+grace.ellis@sakilacustomer.org
+Wypożyczone filmy:
+- Dragonfly Strangers - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 115
+Wendy Harrison
+wendy.harrison@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 373
+Louis Leone
+louis.leone@sakilacustomer.org
+Wypożyczone filmy:
+- Zhivago Core - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 374
+Jeremy Hurtado
+jeremy.hurtado@sakilacustomer.org
+Wypożyczone filmy:
+- Window Side - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 120
+Sylvia Ortiz
+sylvia.ortiz@sakilacustomer.org
+Wypożyczone filmy:
+- Opposite Necklace - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 388
+Craig Morrell
+craig.morrell@sakilacustomer.org
+Wypożyczone filmy:
+- Mummy Creatures - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 135
+Juanita Mason
+juanita.mason@sakilacustomer.org
+Wypożyczone filmy:
+- None Spiking - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 394
+Chris Brothers
+chris.brothers@sakilacustomer.org
+Wypożyczone filmy:
+- Cincinatti Whisperer - Wypozyczono 19 dni temu
+
+15:17:54.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 142
+April Burns
+april.burns@sakilacustomer.org
+Wypożyczone filmy:
+- Outfield Massacre - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 405
+Leonard Schofield
+leonard.schofield@sakilacustomer.org
+Wypożyczone filmy:
+- Fight Jawbreaker - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 152
+Alicia Mills
+alicia.mills@sakilacustomer.org
+Wypożyczone filmy:
+- Sleepless Monsoon - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 410
+Curtis Irby
+curtis.irby@sakilacustomer.org
+Wypożyczone filmy:
+- Gorgeous Bingo - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 155
+Gail Knight
+gail.knight@sakilacustomer.org
+Wypożyczone filmy:
+- Hyde Doctor - Wypozyczono 19 dni temu
+- Chasing Fight - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 411
+Norman Currier
+norman.currier@sakilacustomer.org
+Wypożyczone filmy:
+- Harry Idaho - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 412
+Allen Butterfield
+allen.butterfield@sakilacustomer.org
+Wypożyczone filmy:
+- Mulan Moon - Wypozyczono 19 dni temu
+
+15:17:54.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 417
+Travis Estep
+travis.estep@sakilacustomer.org
+Wypożyczone filmy:
+- Seabiscuit Punk - Wypozyczono 19 dni temu
+
+15:17:54.633 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 162
+Lauren Hudson
+lauren.hudson@sakilacustomer.org
+Wypożyczone filmy:
+- Midnight Westward - Wypozyczono 19 dni temu
+
+15:17:54.638 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 163
+Cathy Spencer
+cathy.spencer@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+- Holes Brannigan - Wypozyczono 19 dni temu
+
+15:17:54.642 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 421
+Lee Hawks
+lee.hawks@sakilacustomer.org
+Wypożyczone filmy:
+- Detective Vision - Wypozyczono 19 dni temu
+
+15:17:54.645 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 422
+Melvin Ellington
+melvin.ellington@sakilacustomer.org
+Wypożyczone filmy:
+- Basic Easy - Wypozyczono 19 dni temu
+
+15:17:54.651 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 424
+Kyle Spurlock
+kyle.spurlock@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:17:54.654 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 168
+Regina Berry
+regina.berry@sakilacustomer.org
+Wypożyczone filmy:
+- Wedding Apollo - Wypozyczono 19 dni temu
+
+15:17:54.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 175
+Annette Olson
+annette.olson@sakilacustomer.org
+Wypożyczone filmy:
+- Deer Virginian - Wypozyczono 19 dni temu
+- Pirates Roxanne - Wypozyczono 19 dni temu
+
+15:17:54.663 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 431
+Joel Francisco
+joel.francisco@sakilacustomer.org
+Wypożyczone filmy:
+- Lovely Jingle - Wypozyczono 19 dni temu
+
+15:17:54.668 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 178
+Marion Snyder
+marion.snyder@sakilacustomer.org
+Wypożyczone filmy:
+- Forrester Comancheros - Wypozyczono 19 dni temu
+
+15:17:54.683 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 180
+Stacy Cunningham
+stacy.cunningham@sakilacustomer.org
+Wypożyczone filmy:
+- Name Detective - Wypozyczono 19 dni temu
+
+15:17:54.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 181
+Ana Bradley
+ana.bradley@sakilacustomer.org
+Wypożyczone filmy:
+- Happiness United - Wypozyczono 19 dni temu
+
+15:17:54.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 438
+Barry Lovelace
+barry.lovelace@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:17:54.698 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 440
+Bernard Colby
+bernard.colby@sakilacustomer.org
+Wypożyczone filmy:
+- Queen Luke - Wypozyczono 19 dni temu
+
+15:17:54.702 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 441
+Mario Cheatham
+mario.cheatham@sakilacustomer.org
+Wypożyczone filmy:
+- Eagles Panky - Wypozyczono 19 dni temu
+
+15:17:54.709 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 186
+Holly Fox
+holly.fox@sakilacustomer.org
+Wypożyczone filmy:
+- South Wait - Wypozyczono 19 dni temu
+
+15:17:54.715 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 188
+Melanie Armstrong
+melanie.armstrong@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:17:54.720 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 190
+Yolanda Weaver
+yolanda.weaver@sakilacustomer.org
+Wypożyczone filmy:
+- Day Unfaithful - Wypozyczono 19 dni temu
+
+15:17:54.734 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 191
+Jeanette Greene
+jeanette.greene@sakilacustomer.org
+Wypożyczone filmy:
+- Effect Gladiator - Wypozyczono 19 dni temu
+
+15:17:54.739 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 192
+Laurie Lawrence
+laurie.lawrence@sakilacustomer.org
+Wypożyczone filmy:
+- Haunted Antitrust - Wypozyczono 19 dni temu
+
+15:17:54.746 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 448
+Miguel Betancourt
+miguel.betancourt@sakilacustomer.org
+Wypożyczone filmy:
+- State Wasteland - Wypozyczono 19 dni temu
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:17:54.750 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 193
+Katie Elliott
+katie.elliott@sakilacustomer.org
+Wypożyczone filmy:
+- Monster Spartacus - Wypozyczono 19 dni temu
+
+15:17:54.765 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 450
+Jay Robb
+jay.robb@sakilacustomer.org
+Wypożyczone filmy:
+- Intrigue Worst - Wypozyczono 19 dni temu
+
+15:17:54.773 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 452
+Tom Milner
+tom.milner@sakilacustomer.org
+Wypożyczone filmy:
+- Hunchback Impossible - Wypozyczono 19 dni temu
+
+15:17:54.777 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 199
+Beth Franklin
+beth.franklin@sakilacustomer.org
+Wypożyczone filmy:
+- Baked Cleopatra - Wypozyczono 19 dni temu
+
+15:17:54.781 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 200
+Jeanne Lawson
+jeanne.lawson@sakilacustomer.org
+Wypożyczone filmy:
+- Mulholland Beast - Wypozyczono 19 dni temu
+
+15:17:54.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 457
+Bill Gavin
+bill.gavin@sakilacustomer.org
+Wypożyczone filmy:
+- Gleaming Jawbreaker - Wypozyczono 19 dni temu
+- Cleopatra Devil - Wypozyczono 19 dni temu
+
+15:17:54.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 208
+Lucy Wheeler
+lucy.wheeler@sakilacustomer.org
+Wypożyczone filmy:
+- Seattle Expecations - Wypozyczono 19 dni temu
+- Curtain Videotape - Wypozyczono 19 dni temu
+
+15:17:54.796 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 211
+Stacey Montgomery
+stacey.montgomery@sakilacustomer.org
+Wypożyczone filmy:
+- Details Packer - Wypozyczono 19 dni temu
+
+15:17:54.801 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 213
+Gina Williamson
+gina.williamson@sakilacustomer.org
+Wypożyczone filmy:
+- Bang Kwai - Wypozyczono 19 dni temu
+
+15:17:54.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 214
+Kristin Johnston
+kristin.johnston@sakilacustomer.org
+Wypożyczone filmy:
+- Star Operation - Wypozyczono 19 dni temu
+
+15:17:54.822 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 215
+Jessie Banks
+jessie.banks@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:17:54.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 216
+Natalie Meyer
+natalie.meyer@sakilacustomer.org
+Wypożyczone filmy:
+- Women Dorado - Wypozyczono 19 dni temu
+- Sweden Shining - Wypozyczono 19 dni temu
+
+15:17:54.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 472
+Greg Robins
+greg.robins@sakilacustomer.org
+Wypożyczone filmy:
+- Wanda Chamber - Wypozyczono 19 dni temu
+
+15:17:54.849 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 474
+Dustin Gillette
+dustin.gillette@sakilacustomer.org
+Wypożyczone filmy:
+- Crooked Frogmen - Wypozyczono 19 dni temu
+
+15:17:54.849 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 219
+Willie Howell
+willie.howell@sakilacustomer.org
+Wypożyczone filmy:
+- Titans Jerk - Wypozyczono 19 dni temu
+
+15:17:54.849 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 476
+Derrick Bourque
+derrick.bourque@sakilacustomer.org
+Wypożyczone filmy:
+- Mosquito Armageddon - Wypozyczono 19 dni temu
+
+15:17:54.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 479
+Zachary Hite
+zachary.hite@sakilacustomer.org
+Wypożyczone filmy:
+- Frost Head - Wypozyczono 19 dni temu
+
+15:17:54.874 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 227
+Colleen Burton
+colleen.burton@sakilacustomer.org
+Wypożyczone filmy:
+- Moonwalker Fool - Wypozyczono 19 dni temu
+
+15:17:54.881 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 228
+Allison Stanley
+allison.stanley@sakilacustomer.org
+Wypożyczone filmy:
+- Grapes Fury - Wypozyczono 19 dni temu
+- Cyclone Family - Wypozyczono 19 dni temu
+
+15:17:54.886 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 229
+Tamara Nguyen
+tamara.nguyen@sakilacustomer.org
+Wypożyczone filmy:
+- Loathing Legally - Wypozyczono 19 dni temu
+
+15:17:54.891 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 234
+Claudia Fuller
+claudia.fuller@sakilacustomer.org
+Wypożyczone filmy:
+- Encino Elf - Wypozyczono 19 dni temu
+
+15:17:54.897 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 236
+Marcia Dean
+marcia.dean@sakilacustomer.org
+Wypożyczone filmy:
+- Alone Trip - Wypozyczono 19 dni temu
+
+15:17:54.901 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 493
+Brent Harkins
+brent.harkins@sakilacustomer.org
+Wypożyczone filmy:
+- Lord Arizona - Wypozyczono 19 dni temu
+
+15:17:54.907 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 495
+Charlie Bess
+charlie.bess@sakilacustomer.org
+Wypożyczone filmy:
+- Song Hedwig - Wypozyczono 19 dni temu
+
+15:17:54.912 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 496
+Tyler Wren
+tyler.wren@sakilacustomer.org
+Wypożyczone filmy:
+- Blanket Beverly - Wypozyczono 19 dni temu
+
+15:17:54.917 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 497
+Gilbert Sledge
+gilbert.sledge@sakilacustomer.org
+Wypożyczone filmy:
+- Silverado Goldfinger - Wypozyczono 19 dni temu
+
+15:17:54.923 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 244
+Viola Hanson
+viola.hanson@sakilacustomer.org
+Wypożyczone filmy:
+- Shawshank Bubble - Wypozyczono 19 dni temu
+
+15:17:54.928 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 245
+Courtney Day
+courtney.day@sakilacustomer.org
+Wypożyczone filmy:
+- Driver Annie - Wypozyczono 19 dni temu
+
+15:17:54.932 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 505
+Rafael Abney
+rafael.abney@sakilacustomer.org
+Wypożyczone filmy:
+- Conversation Downhill - Wypozyczono 19 dni temu
+
+15:17:54.936 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 251
+Vickie Brewer
+vickie.brewer@sakilacustomer.org
+Wypożyczone filmy:
+- Swarm Gold - Wypozyczono 19 dni temu
+
+15:17:54.941 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 252
+Mattie Hoffman
+mattie.hoffman@sakilacustomer.org
+Wypożyczone filmy:
+- Drifter Commandments - Wypozyczono 19 dni temu
+
+15:17:54.944 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 508
+Milton Howland
+milton.howland@sakilacustomer.org
+Wypożyczone filmy:
+- Disciple Mother - Wypozyczono 19 dni temu
+
+15:17:54.962 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions customer-reports-0
+15:17:54.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions revoked: [customer-reports-0]
+15:17:54.965 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Member consumer-group_id-1-94d85d30-0f1d-43fa-b335-40304e15b32d sending LeaveGroup request to coordinator 10.132.15.83:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+15:17:54.967 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation and member id due to: consumer pro-actively leaving the group
+15:17:54.967 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+15:17:54.967 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+15:17:54.970 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation and member id due to: consumer pro-actively leaving the group
+15:17:54.970 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+15:17:55.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+15:17:55.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+15:17:55.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+15:17:55.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+15:17:55.459 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-group_id-1 unregistered
+15:17:55.459 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: Consumer stopped
+15:17:55.511 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=dvdRentalv2-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+15:17:55.533 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+15:17:55.533 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+15:17:55.533 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+15:17:55.533 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+15:17:55.535 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for dvdRentalv2-producer-1 unregistered
+15:17:55.540 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:17:55.542 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:17:55.559 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

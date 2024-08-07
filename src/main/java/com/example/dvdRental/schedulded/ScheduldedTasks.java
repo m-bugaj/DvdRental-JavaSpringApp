@@ -11,10 +11,12 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.*;
 import java.util.logging.FileHandler;
 
@@ -52,8 +54,9 @@ public class ScheduldedTasks {
     }
 
 //    @Scheduled(cron = "*/10 * * * * *")
-    @Scheduled(cron = "0 0 7 * * *")
-//    @Scheduled(cron = "0 */2 * * * *")
+//    @Scheduled(cron = "0 0 7 * * *")
+//    @Scheduled(cron = "0 */1 * * * *")
+//    @Scheduled(cron = "*/10 * * * * *")
     public void generateReportSchedulded() {
         LocalDateTime oneWeekAgo = LocalDate.now().minusWeeks(1).atTime(0,0);
         Timestamp dateOneWeekAgo = Timestamp.valueOf(oneWeekAgo);
@@ -64,7 +67,16 @@ public class ScheduldedTasks {
        for (Rental rental : rentals) {
            Integer customerId = rental.getCustomer().getCustomerId();
            List<String> films = reportHashMap.getOrDefault(customerId, new ArrayList<>());
-           films.add(rental.getInventory().getFilm().getTitle());
+
+           Period rentalPeriod = Period.between(
+                   rental.getRentalDate().toLocalDateTime().toLocalDate(), LocalDate.now()
+           );
+
+           films.add(String.format(
+                   "%s - Wypozyczono %d dni temu",
+                   rental.getInventory().getFilm().getTitle(),
+                   rentalPeriod.getDays())
+           );
            reportHashMap.put(customerId,films);
        }
 
@@ -82,24 +94,8 @@ public class ScheduldedTasks {
 
                for (String filmTitle : reportHashMap.get(customerId)) {
                    report.append("- ").append(filmTitle).append("\n");
-
-//                   System.out.printf("ID: %d%n %s %s%n %s%n Film title: %s%n%n",
-//                           customerId,
-//                           customer.getFirstName(),
-//                           customer.getLastName(),
-//                           customer.getEmail(),
-//                           filmTitle);
                }
                log.info(report.toString()); // Zapisanie raportu do logów
-//               SimpleDateFormat format = new SimpleDateFormat("M-d_HHmmss");
-//               try {
-//                   fh = new FileHandler("/logs/MyLogFile_"
-//                           + format.format(Calendar.getInstance().getTime()) + ".log");
-//                   log.
-//               } catch (SecurityException | IOException e) {
-//                   e.printStackTrace();
-//               }
-
            }
        }
     }

@@ -1,0 +1,2288 @@
+15:19:00.263 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 512
+Cecil Vines
+cecil.vines@sakilacustomer.org
+Wypożyczone filmy:
+- Amadeus Holy - Wypozyczono 19 dni temu
+
+15:19:00.285 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 1
+Mary Smith
+mary.smith@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 15 dni temu
+
+15:19:00.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 516
+Elmer Noe
+elmer.noe@sakilacustomer.org
+Wypożyczone filmy:
+- Falcon Volume - Wypozyczono 19 dni temu
+- Minority Kiss - Wypozyczono 19 dni temu
+
+15:19:00.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 5
+Elizabeth Brown
+elizabeth.brown@sakilacustomer.org
+Wypożyczone filmy:
+- Gables Metropolis - Wypozyczono 19 dni temu
+
+15:19:00.302 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 263
+Hilda Hopkins
+hilda.hopkins@sakilacustomer.org
+Wypożyczone filmy:
+- Earth Vision - Wypozyczono 19 dni temu
+
+15:19:00.303 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 264
+Gwendolyn May
+gwendolyn.may@sakilacustomer.org
+Wypożyczone filmy:
+- Flying Hook - Wypozyczono 19 dni temu
+
+15:19:00.304 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 521
+Roland South
+roland.south@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:19:00.311 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 9
+Margaret Moore
+margaret.moore@sakilacustomer.org
+Wypożyczone filmy:
+- Deep Crusade - Wypozyczono 19 dni temu
+
+15:19:00.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 11
+Lisa Anderson
+lisa.anderson@sakilacustomer.org
+Wypożyczone filmy:
+- Bull Shawshank - Wypozyczono 19 dni temu
+
+15:19:00.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 267
+Margie Wade
+margie.wade@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Philadelphia Wife - Wypozyczono 19 dni temu
+
+15:19:00.316 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 269
+Cassandra Walters
+cassandra.walters@sakilacustomer.org
+Wypożyczone filmy:
+- Princess Giant - Wypozyczono 19 dni temu
+- Theory Mermaid - Wypozyczono 19 dni temu
+
+15:19:00.320 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 525
+Adrian Clary
+adrian.clary@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:19:00.338 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 14
+Betty White
+betty.white@sakilacustomer.org
+Wypożyczone filmy:
+- Groundhog Uncut - Wypozyczono 19 dni temu
+
+15:19:00.344 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 15
+Helen Harris
+helen.harris@sakilacustomer.org
+Wypożyczone filmy:
+- Candidate Perdition - Wypozyczono 19 dni temu
+- Smoking Barbarella - Wypozyczono 19 dni temu
+
+15:19:00.348 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 527
+Cory Meehan
+cory.meehan@sakilacustomer.org
+Wypożyczone filmy:
+- Jason Trap - Wypozyczono 19 dni temu
+
+15:19:00.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 274
+Naomi Jennings
+naomi.jennings@sakilacustomer.org
+Wypożyczone filmy:
+- Wild Apollo - Wypozyczono 19 dni temu
+
+15:19:00.369 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 530
+Darryl Ashcraft
+darryl.ashcraft@sakilacustomer.org
+Wypożyczone filmy:
+- Pure Runner - Wypozyczono 19 dni temu
+
+15:19:00.374 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 532
+Neil Renner
+neil.renner@sakilacustomer.org
+Wypożyczone filmy:
+- World Leathernecks - Wypozyczono 19 dni temu
+
+15:19:00.378 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 533
+Jessie Milam
+jessie.milam@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:19:00.381 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 21
+Michelle Clark
+michelle.clark@sakilacustomer.org
+Wypożyczone filmy:
+- Dwarfs Alter - Wypozyczono 19 dni temu
+
+15:19:00.386 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 22
+Laura Rodriguez
+laura.rodriguez@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:19:00.390 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 534
+Christian Jung
+christian.jung@sakilacustomer.org
+Wypożyczone filmy:
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:19:00.394 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 279
+Dianne Shelton
+dianne.shelton@sakilacustomer.org
+Wypożyczone filmy:
+- Cat Coneheads - Wypozyczono 19 dni temu
+
+15:19:00.398 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 23
+Sarah Lewis
+sarah.lewis@sakilacustomer.org
+Wypożyczone filmy:
+- Divine Resurrection - Wypozyczono 19 dni temu
+
+15:19:00.402 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 537
+Clinton Buford
+clinton.buford@sakilacustomer.org
+Wypożyczone filmy:
+- Scarface Bang - Wypozyczono 19 dni temu
+
+15:19:00.407 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 282
+Jenny Castro
+jenny.castro@sakilacustomer.org
+Wypożyczone filmy:
+- Volcano Texas - Wypozyczono 19 dni temu
+
+15:19:00.413 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 284
+Sonia Gregory
+sonia.gregory@sakilacustomer.org
+Wypożyczone filmy:
+- Berets Agent - Wypozyczono 19 dni temu
+- Frida Slipper - Wypozyczono 19 dni temu
+
+15:19:00.416 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 28
+Cynthia Young
+cynthia.young@sakilacustomer.org
+Wypożyczone filmy:
+- Suspects Quills - Wypozyczono 19 dni temu
+
+15:19:00.422 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 29
+Angela Hernandez
+angela.hernandez@sakilacustomer.org
+Wypożyczone filmy:
+- Canyon Stock - Wypozyczono 19 dni temu
+
+15:19:00.426 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 287
+Becky Miles
+becky.miles@sakilacustomer.org
+Wypożyczone filmy:
+- Virginian Pluto - Wypozyczono 19 dni temu
+
+15:19:00.431 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 33
+Anna Hill
+anna.hill@sakilacustomer.org
+Wypożyczone filmy:
+- Boulevard Mob - Wypozyczono 19 dni temu
+
+15:19:00.435 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 548
+Allan Cornish
+allan.cornish@sakilacustomer.org
+Wypożyczone filmy:
+- Sundance Invasion - Wypozyczono 19 dni temu
+
+15:19:00.439 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 550
+Guy Brownlee
+guy.brownlee@sakilacustomer.org
+Wypożyczone filmy:
+- Enough Raging - Wypozyczono 19 dni temu
+
+15:19:00.442 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 295
+Daisy Bates
+daisy.bates@sakilacustomer.org
+Wypożyczone filmy:
+- Pride Alamo - Wypozyczono 19 dni temu
+
+15:19:00.446 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 296
+Ramona Hale
+ramona.hale@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:19:00.449 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 41
+Stephanie Mitchell
+stephanie.mitchell@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:19:00.455 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 42
+Carolyn Perez
+carolyn.perez@sakilacustomer.org
+Wypożyczone filmy:
+- Torque Bound - Wypozyczono 19 dni temu
+- River Outlaw - Wypozyczono 19 dni temu
+
+15:19:00.457 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 554
+Dwayne Olvera
+dwayne.olvera@sakilacustomer.org
+Wypożyczone filmy:
+- Academy Dinosaur - Wypozyczono 12 dni temu
+
+15:19:00.460 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 43
+Christine Roberts
+christine.roberts@sakilacustomer.org
+Wypożyczone filmy:
+- Pollock Deliverance - Wypozyczono 19 dni temu
+- Motions Details - Wypozyczono 19 dni temu
+
+15:19:00.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 44
+Marie Turner
+marie.turner@sakilacustomer.org
+Wypożyczone filmy:
+- American Circus - Wypozyczono 19 dni temu
+
+15:19:00.467 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 300
+John Farnsworth
+john.farnsworth@sakilacustomer.org
+Wypożyczone filmy:
+- Outlaw Hanky - Wypozyczono 19 dni temu
+
+15:19:00.472 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 557
+Felix Gaffney
+felix.gaffney@sakilacustomer.org
+Wypożyczone filmy:
+- Lady Stage - Wypozyczono 19 dni temu
+
+15:19:00.476 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 560
+Jordan Archuleta
+jordan.archuleta@sakilacustomer.org
+Wypożyczone filmy:
+- Pianist Outfield - Wypozyczono 19 dni temu
+- Movie Shakespeare - Wypozyczono 19 dni temu
+
+15:19:00.481 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 561
+Ian Still
+ian.still@sakilacustomer.org
+Wypożyczone filmy:
+- Mockingbird Hollywood - Wypozyczono 19 dni temu
+
+15:19:00.485 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 52
+Julie Sanchez
+julie.sanchez@sakilacustomer.org
+Wypożyczone filmy:
+- Trading Pinocchio - Wypozyczono 19 dni temu
+
+15:19:00.489 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 53
+Heather Morris
+heather.morris@sakilacustomer.org
+Wypożyczone filmy:
+- Peach Innocent - Wypozyczono 19 dni temu
+- Lawless Vision - Wypozyczono 19 dni temu
+
+15:19:00.493 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 568
+Alberto Henning
+alberto.henning@sakilacustomer.org
+Wypożyczone filmy:
+- Vanishing Rocky - Wypozyczono 19 dni temu
+
+15:19:00.496 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 56
+Gloria Cook
+gloria.cook@sakilacustomer.org
+Wypożyczone filmy:
+- Igby Maker - Wypozyczono 19 dni temu
+
+15:19:00.500 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 570
+Ivan Cromwell
+ivan.cromwell@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:19:00.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 58
+Jean Bell
+jean.bell@sakilacustomer.org
+Wypożyczone filmy:
+- Ridgemont Submarine - Wypozyczono 19 dni temu
+
+15:19:00.510 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 315
+Kenneth Gooden
+kenneth.gooden@sakilacustomer.org
+Wypożyczone filmy:
+- Operation Operation - Wypozyczono 19 dni temu
+
+15:19:00.516 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 60
+Mildred Bailey
+mildred.bailey@sakilacustomer.org
+Wypożyczone filmy:
+- Boogie Amelie - Wypozyczono 19 dni temu
+- Chamber Italian - Wypozyczono 19 dni temu
+
+15:19:00.520 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 317
+Edward Baugh
+edward.baugh@sakilacustomer.org
+Wypożyczone filmy:
+- Armageddon Lost - Wypozyczono 19 dni temu
+
+15:19:00.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 576
+Morris Mccarter
+morris.mccarter@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Vanished Garden - Wypozyczono 19 dni temu
+
+15:19:00.531 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 64
+Judith Cox
+judith.cox@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:19:00.536 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 579
+Daryl Larue
+daryl.larue@sakilacustomer.org
+Wypożyczone filmy:
+- Streak Ridgemont - Wypozyczono 19 dni temu
+
+15:19:00.540 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 324
+Gary Coy
+gary.coy@sakilacustomer.org
+Wypożyczone filmy:
+- Chitty Lock - Wypozyczono 19 dni temu
+
+15:19:00.547 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 69
+Judy Gray
+judy.gray@sakilacustomer.org
+Wypożyczone filmy:
+- Summer Scarface - Wypozyczono 19 dni temu
+
+15:19:00.550 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 582
+Andy Vanhorn
+andy.vanhorn@sakilacustomer.org
+Wypożyczone filmy:
+- Tuxedo Mile - Wypozyczono 19 dni temu
+
+15:19:00.555 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 327
+Larry Thrasher
+larry.thrasher@sakilacustomer.org
+Wypożyczone filmy:
+- Pulp Beverly - Wypozyczono 19 dni temu
+
+15:19:00.558 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 73
+Beverly Brooks
+beverly.brooks@sakilacustomer.org
+Wypożyczone filmy:
+- Shrek License - Wypozyczono 19 dni temu
+
+15:19:00.562 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 585
+Perry Swafford
+perry.swafford@sakilacustomer.org
+Wypożyczone filmy:
+- Devil Desire - Wypozyczono 19 dni temu
+
+15:19:00.567 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 330
+Scott Shelley
+scott.shelley@sakilacustomer.org
+Wypożyczone filmy:
+- Grail Frankenstein - Wypozyczono 19 dni temu
+
+15:19:00.572 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 587
+Sergio Stanfield
+sergio.stanfield@sakilacustomer.org
+Wypożyczone filmy:
+- Camelot Vacation - Wypozyczono 19 dni temu
+
+15:19:00.577 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 75
+Tammy Sanders
+tammy.sanders@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Trouble Date - Wypozyczono 19 dni temu
+- Sleepy Japanese - Wypozyczono 19 dni temu
+
+15:19:00.585 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 334
+Raymond Mcwhorter
+raymond.mcwhorter@sakilacustomer.org
+Wypożyczone filmy:
+- Smoochy Control - Wypozyczono 19 dni temu
+
+15:19:00.588 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 590
+Seth Hannon
+seth.hannon@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 19 dni temu
+
+15:19:00.593 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 335
+Gregory Mauldin
+gregory.mauldin@sakilacustomer.org
+Wypożyczone filmy:
+- Hunger Roof - Wypozyczono 19 dni temu
+
+15:19:00.598 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 80
+Marilyn Ross
+marilyn.ross@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:19:00.602 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 336
+Joshua Mark
+joshua.mark@sakilacustomer.org
+Wypożyczone filmy:
+- Juggler Hardly - Wypozyczono 19 dni temu
+
+15:19:00.608 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 592
+Terrance Roush
+terrance.roush@sakilacustomer.org
+Wypożyczone filmy:
+- Kick Savannah - Wypozyczono 19 dni temu
+
+15:19:00.611 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 337
+Jerry Jordon
+jerry.jordon@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:19:00.616 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 83
+Louise Jenkins
+louise.jenkins@sakilacustomer.org
+Wypożyczone filmy:
+- Frisco Forrest - Wypozyczono 19 dni temu
+
+15:19:00.619 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 596
+Enrique Forsythe
+enrique.forsythe@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:19:00.625 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 597
+Freddie Duggan
+freddie.duggan@sakilacustomer.org
+Wypożyczone filmy:
+- Ghost Groundhog - Wypozyczono 19 dni temu
+
+15:19:00.629 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 87
+Wanda Patterson
+wanda.patterson@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:19:00.633 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 91
+Lois Butler
+lois.butler@sakilacustomer.org
+Wypożyczone filmy:
+- Bubble Grosse - Wypozyczono 19 dni temu
+
+15:19:00.636 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 349
+Joe Gilliland
+joe.gilliland@sakilacustomer.org
+Wypożyczone filmy:
+- Amistad Midsummer - Wypozyczono 19 dni temu
+
+15:19:00.642 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 94
+Norma Gonzales
+norma.gonzales@sakilacustomer.org
+Wypożyczone filmy:
+- Sleeping Suspects - Wypozyczono 19 dni temu
+
+15:19:00.646 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 352
+Albert Crouse
+albert.crouse@sakilacustomer.org
+Wypożyczone filmy:
+- Varsity Trip - Wypozyczono 19 dni temu
+
+15:19:00.652 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 354
+Justin Ngo
+justin.ngo@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Trojan Tomorrow - Wypozyczono 19 dni temu
+
+15:19:00.655 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 99
+Emily Diaz
+emily.diaz@sakilacustomer.org
+Wypożyczone filmy:
+- Connection Microcosmos - Wypozyczono 19 dni temu
+
+15:19:00.660 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 355
+Terry Grissom
+terry.grissom@sakilacustomer.org
+Wypożyczone filmy:
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:19:00.664 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 100
+Robin Hayes
+robin.hayes@sakilacustomer.org
+Wypożyczone filmy:
+- Bound Cheaper - Wypozyczono 19 dni temu
+
+15:19:00.667 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 101
+Peggy Myers
+peggy.myers@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+
+15:19:00.671 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 359
+Willie Markham
+willie.markham@sakilacustomer.org
+Wypożyczone filmy:
+- Center Dinosaur - Wypozyczono 19 dni temu
+
+15:19:00.676 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 361
+Lawrence Lawton
+lawrence.lawton@sakilacustomer.org
+Wypożyczone filmy:
+- Insects Stone - Wypozyczono 19 dni temu
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:19:00.679 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 107
+Florence Woods
+florence.woods@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+- Blade Polish - Wypozyczono 19 dni temu
+
+15:19:00.685 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 108
+Tracy Cole
+tracy.cole@sakilacustomer.org
+Wypożyczone filmy:
+- Ali Forever - Wypozyczono 19 dni temu
+
+15:19:00.687 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 366
+Brandon Huey
+brandon.huey@sakilacustomer.org
+Wypożyczone filmy:
+- Ace Goldfinger - Wypozyczono 19 dni temu
+
+15:19:00.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 111
+Carmen Owens
+carmen.owens@sakilacustomer.org
+Wypożyczone filmy:
+- Affair Prejudice - Wypozyczono 19 dni temu
+
+15:19:00.695 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 369
+Fred Wheat
+fred.wheat@sakilacustomer.org
+Wypożyczone filmy:
+- Sweethearts Suspects - Wypozyczono 19 dni temu
+
+15:19:00.700 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 114
+Grace Ellis
+grace.ellis@sakilacustomer.org
+Wypożyczone filmy:
+- Dragonfly Strangers - Wypozyczono 19 dni temu
+
+15:19:00.705 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 115
+Wendy Harrison
+wendy.harrison@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+
+15:19:00.709 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 373
+Louis Leone
+louis.leone@sakilacustomer.org
+Wypożyczone filmy:
+- Zhivago Core - Wypozyczono 19 dni temu
+
+15:19:00.716 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 374
+Jeremy Hurtado
+jeremy.hurtado@sakilacustomer.org
+Wypożyczone filmy:
+- Window Side - Wypozyczono 19 dni temu
+
+15:19:00.720 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 120
+Sylvia Ortiz
+sylvia.ortiz@sakilacustomer.org
+Wypożyczone filmy:
+- Opposite Necklace - Wypozyczono 19 dni temu
+
+15:19:00.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 388
+Craig Morrell
+craig.morrell@sakilacustomer.org
+Wypożyczone filmy:
+- Mummy Creatures - Wypozyczono 19 dni temu
+
+15:19:00.740 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 135
+Juanita Mason
+juanita.mason@sakilacustomer.org
+Wypożyczone filmy:
+- None Spiking - Wypozyczono 19 dni temu
+
+15:19:00.745 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 394
+Chris Brothers
+chris.brothers@sakilacustomer.org
+Wypożyczone filmy:
+- Cincinatti Whisperer - Wypozyczono 19 dni temu
+
+15:19:00.748 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 142
+April Burns
+april.burns@sakilacustomer.org
+Wypożyczone filmy:
+- Outfield Massacre - Wypozyczono 19 dni temu
+
+15:19:00.752 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 405
+Leonard Schofield
+leonard.schofield@sakilacustomer.org
+Wypożyczone filmy:
+- Fight Jawbreaker - Wypozyczono 19 dni temu
+
+15:19:00.754 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 152
+Alicia Mills
+alicia.mills@sakilacustomer.org
+Wypożyczone filmy:
+- Sleepless Monsoon - Wypozyczono 19 dni temu
+
+15:19:00.758 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 410
+Curtis Irby
+curtis.irby@sakilacustomer.org
+Wypożyczone filmy:
+- Gorgeous Bingo - Wypozyczono 19 dni temu
+
+15:19:00.761 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 155
+Gail Knight
+gail.knight@sakilacustomer.org
+Wypożyczone filmy:
+- Hyde Doctor - Wypozyczono 19 dni temu
+- Chasing Fight - Wypozyczono 19 dni temu
+
+15:19:00.763 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 411
+Norman Currier
+norman.currier@sakilacustomer.org
+Wypożyczone filmy:
+- Harry Idaho - Wypozyczono 19 dni temu
+
+15:19:00.767 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 412
+Allen Butterfield
+allen.butterfield@sakilacustomer.org
+Wypożyczone filmy:
+- Mulan Moon - Wypozyczono 19 dni temu
+
+15:19:00.778 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 417
+Travis Estep
+travis.estep@sakilacustomer.org
+Wypożyczone filmy:
+- Seabiscuit Punk - Wypozyczono 19 dni temu
+
+15:19:00.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 162
+Lauren Hudson
+lauren.hudson@sakilacustomer.org
+Wypożyczone filmy:
+- Midnight Westward - Wypozyczono 19 dni temu
+
+15:19:00.791 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 163
+Cathy Spencer
+cathy.spencer@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+- Holes Brannigan - Wypozyczono 19 dni temu
+
+15:19:00.795 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 421
+Lee Hawks
+lee.hawks@sakilacustomer.org
+Wypożyczone filmy:
+- Detective Vision - Wypozyczono 19 dni temu
+
+15:19:00.797 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 422
+Melvin Ellington
+melvin.ellington@sakilacustomer.org
+Wypożyczone filmy:
+- Basic Easy - Wypozyczono 19 dni temu
+
+15:19:00.811 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 424
+Kyle Spurlock
+kyle.spurlock@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:19:00.817 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 168
+Regina Berry
+regina.berry@sakilacustomer.org
+Wypożyczone filmy:
+- Wedding Apollo - Wypozyczono 19 dni temu
+
+15:19:00.820 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 175
+Annette Olson
+annette.olson@sakilacustomer.org
+Wypożyczone filmy:
+- Deer Virginian - Wypozyczono 19 dni temu
+- Pirates Roxanne - Wypozyczono 19 dni temu
+
+15:19:00.823 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 431
+Joel Francisco
+joel.francisco@sakilacustomer.org
+Wypożyczone filmy:
+- Lovely Jingle - Wypozyczono 19 dni temu
+
+15:19:00.826 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 178
+Marion Snyder
+marion.snyder@sakilacustomer.org
+Wypożyczone filmy:
+- Forrester Comancheros - Wypozyczono 19 dni temu
+
+15:19:00.830 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 180
+Stacy Cunningham
+stacy.cunningham@sakilacustomer.org
+Wypożyczone filmy:
+- Name Detective - Wypozyczono 19 dni temu
+
+15:19:00.832 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 181
+Ana Bradley
+ana.bradley@sakilacustomer.org
+Wypożyczone filmy:
+- Happiness United - Wypozyczono 19 dni temu
+
+15:19:00.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 438
+Barry Lovelace
+barry.lovelace@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:19:00.839 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 440
+Bernard Colby
+bernard.colby@sakilacustomer.org
+Wypożyczone filmy:
+- Queen Luke - Wypozyczono 19 dni temu
+
+15:19:00.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 441
+Mario Cheatham
+mario.cheatham@sakilacustomer.org
+Wypożyczone filmy:
+- Eagles Panky - Wypozyczono 19 dni temu
+
+15:19:00.846 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 186
+Holly Fox
+holly.fox@sakilacustomer.org
+Wypożyczone filmy:
+- South Wait - Wypozyczono 19 dni temu
+
+15:19:00.862 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 188
+Melanie Armstrong
+melanie.armstrong@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:19:00.866 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 190
+Yolanda Weaver
+yolanda.weaver@sakilacustomer.org
+Wypożyczone filmy:
+- Day Unfaithful - Wypozyczono 19 dni temu
+
+15:19:00.870 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 191
+Jeanette Greene
+jeanette.greene@sakilacustomer.org
+Wypożyczone filmy:
+- Effect Gladiator - Wypozyczono 19 dni temu
+
+15:19:00.875 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 192
+Laurie Lawrence
+laurie.lawrence@sakilacustomer.org
+Wypożyczone filmy:
+- Haunted Antitrust - Wypozyczono 19 dni temu
+
+15:19:00.879 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 448
+Miguel Betancourt
+miguel.betancourt@sakilacustomer.org
+Wypożyczone filmy:
+- State Wasteland - Wypozyczono 19 dni temu
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:19:00.882 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 193
+Katie Elliott
+katie.elliott@sakilacustomer.org
+Wypożyczone filmy:
+- Monster Spartacus - Wypozyczono 19 dni temu
+
+15:19:00.885 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 450
+Jay Robb
+jay.robb@sakilacustomer.org
+Wypożyczone filmy:
+- Intrigue Worst - Wypozyczono 19 dni temu
+
+15:19:00.890 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 452
+Tom Milner
+tom.milner@sakilacustomer.org
+Wypożyczone filmy:
+- Hunchback Impossible - Wypozyczono 19 dni temu
+
+15:19:00.895 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 199
+Beth Franklin
+beth.franklin@sakilacustomer.org
+Wypożyczone filmy:
+- Baked Cleopatra - Wypozyczono 19 dni temu
+
+15:19:00.899 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 200
+Jeanne Lawson
+jeanne.lawson@sakilacustomer.org
+Wypożyczone filmy:
+- Mulholland Beast - Wypozyczono 19 dni temu
+
+15:19:00.905 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 457
+Bill Gavin
+bill.gavin@sakilacustomer.org
+Wypożyczone filmy:
+- Gleaming Jawbreaker - Wypozyczono 19 dni temu
+- Cleopatra Devil - Wypozyczono 19 dni temu
+
+15:19:00.908 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 208
+Lucy Wheeler
+lucy.wheeler@sakilacustomer.org
+Wypożyczone filmy:
+- Seattle Expecations - Wypozyczono 19 dni temu
+- Curtain Videotape - Wypozyczono 19 dni temu
+
+15:19:00.913 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 211
+Stacey Montgomery
+stacey.montgomery@sakilacustomer.org
+Wypożyczone filmy:
+- Details Packer - Wypozyczono 19 dni temu
+
+15:19:00.916 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 213
+Gina Williamson
+gina.williamson@sakilacustomer.org
+Wypożyczone filmy:
+- Bang Kwai - Wypozyczono 19 dni temu
+
+15:19:00.922 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 214
+Kristin Johnston
+kristin.johnston@sakilacustomer.org
+Wypożyczone filmy:
+- Star Operation - Wypozyczono 19 dni temu
+
+15:19:00.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 215
+Jessie Banks
+jessie.banks@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:19:00.929 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 216
+Natalie Meyer
+natalie.meyer@sakilacustomer.org
+Wypożyczone filmy:
+- Women Dorado - Wypozyczono 19 dni temu
+- Sweden Shining - Wypozyczono 19 dni temu
+
+15:19:00.934 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 472
+Greg Robins
+greg.robins@sakilacustomer.org
+Wypożyczone filmy:
+- Wanda Chamber - Wypozyczono 19 dni temu
+
+15:19:00.941 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 474
+Dustin Gillette
+dustin.gillette@sakilacustomer.org
+Wypożyczone filmy:
+- Crooked Frogmen - Wypozyczono 19 dni temu
+
+15:19:00.947 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 219
+Willie Howell
+willie.howell@sakilacustomer.org
+Wypożyczone filmy:
+- Titans Jerk - Wypozyczono 19 dni temu
+
+15:19:00.951 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 476
+Derrick Bourque
+derrick.bourque@sakilacustomer.org
+Wypożyczone filmy:
+- Mosquito Armageddon - Wypozyczono 19 dni temu
+
+15:19:00.956 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 479
+Zachary Hite
+zachary.hite@sakilacustomer.org
+Wypożyczone filmy:
+- Frost Head - Wypozyczono 19 dni temu
+
+15:19:00.960 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 227
+Colleen Burton
+colleen.burton@sakilacustomer.org
+Wypożyczone filmy:
+- Moonwalker Fool - Wypozyczono 19 dni temu
+
+15:19:00.965 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 228
+Allison Stanley
+allison.stanley@sakilacustomer.org
+Wypożyczone filmy:
+- Grapes Fury - Wypozyczono 19 dni temu
+- Cyclone Family - Wypozyczono 19 dni temu
+
+15:19:00.969 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 229
+Tamara Nguyen
+tamara.nguyen@sakilacustomer.org
+Wypożyczone filmy:
+- Loathing Legally - Wypozyczono 19 dni temu
+
+15:19:00.974 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 234
+Claudia Fuller
+claudia.fuller@sakilacustomer.org
+Wypożyczone filmy:
+- Encino Elf - Wypozyczono 19 dni temu
+
+15:19:00.976 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 236
+Marcia Dean
+marcia.dean@sakilacustomer.org
+Wypożyczone filmy:
+- Alone Trip - Wypozyczono 19 dni temu
+
+15:19:00.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 493
+Brent Harkins
+brent.harkins@sakilacustomer.org
+Wypożyczone filmy:
+- Lord Arizona - Wypozyczono 19 dni temu
+
+15:19:00.984 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 495
+Charlie Bess
+charlie.bess@sakilacustomer.org
+Wypożyczone filmy:
+- Song Hedwig - Wypozyczono 19 dni temu
+
+15:19:00.988 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 496
+Tyler Wren
+tyler.wren@sakilacustomer.org
+Wypożyczone filmy:
+- Blanket Beverly - Wypozyczono 19 dni temu
+
+15:19:01.004 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 497
+Gilbert Sledge
+gilbert.sledge@sakilacustomer.org
+Wypożyczone filmy:
+- Silverado Goldfinger - Wypozyczono 19 dni temu
+
+15:19:01.008 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 244
+Viola Hanson
+viola.hanson@sakilacustomer.org
+Wypożyczone filmy:
+- Shawshank Bubble - Wypozyczono 19 dni temu
+
+15:19:01.011 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 245
+Courtney Day
+courtney.day@sakilacustomer.org
+Wypożyczone filmy:
+- Driver Annie - Wypozyczono 19 dni temu
+
+15:19:01.014 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 505
+Rafael Abney
+rafael.abney@sakilacustomer.org
+Wypożyczone filmy:
+- Conversation Downhill - Wypozyczono 19 dni temu
+
+15:19:01.019 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 251
+Vickie Brewer
+vickie.brewer@sakilacustomer.org
+Wypożyczone filmy:
+- Swarm Gold - Wypozyczono 19 dni temu
+
+15:19:01.022 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 252
+Mattie Hoffman
+mattie.hoffman@sakilacustomer.org
+Wypożyczone filmy:
+- Drifter Commandments - Wypozyczono 19 dni temu
+
+15:19:01.026 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 508
+Milton Howland
+milton.howland@sakilacustomer.org
+Wypożyczone filmy:
+- Disciple Mother - Wypozyczono 19 dni temu
+
+15:19:30.268 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 512
+Cecil Vines
+cecil.vines@sakilacustomer.org
+Wypożyczone filmy:
+- Amadeus Holy - Wypozyczono 19 dni temu
+
+15:19:30.271 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 1
+Mary Smith
+mary.smith@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 15 dni temu
+
+15:19:30.273 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 516
+Elmer Noe
+elmer.noe@sakilacustomer.org
+Wypożyczone filmy:
+- Falcon Volume - Wypozyczono 19 dni temu
+- Minority Kiss - Wypozyczono 19 dni temu
+
+15:19:30.276 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 5
+Elizabeth Brown
+elizabeth.brown@sakilacustomer.org
+Wypożyczone filmy:
+- Gables Metropolis - Wypozyczono 19 dni temu
+
+15:19:30.279 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 263
+Hilda Hopkins
+hilda.hopkins@sakilacustomer.org
+Wypożyczone filmy:
+- Earth Vision - Wypozyczono 19 dni temu
+
+15:19:30.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 264
+Gwendolyn May
+gwendolyn.may@sakilacustomer.org
+Wypożyczone filmy:
+- Flying Hook - Wypozyczono 19 dni temu
+
+15:19:30.297 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 521
+Roland South
+roland.south@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:19:30.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 9
+Margaret Moore
+margaret.moore@sakilacustomer.org
+Wypożyczone filmy:
+- Deep Crusade - Wypozyczono 19 dni temu
+
+15:19:30.304 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 11
+Lisa Anderson
+lisa.anderson@sakilacustomer.org
+Wypożyczone filmy:
+- Bull Shawshank - Wypozyczono 19 dni temu
+
+15:19:30.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 267
+Margie Wade
+margie.wade@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Philadelphia Wife - Wypozyczono 19 dni temu
+
+15:19:30.310 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 269
+Cassandra Walters
+cassandra.walters@sakilacustomer.org
+Wypożyczone filmy:
+- Princess Giant - Wypozyczono 19 dni temu
+- Theory Mermaid - Wypozyczono 19 dni temu
+
+15:19:30.324 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 525
+Adrian Clary
+adrian.clary@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:19:30.330 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 14
+Betty White
+betty.white@sakilacustomer.org
+Wypożyczone filmy:
+- Groundhog Uncut - Wypozyczono 19 dni temu
+
+15:19:30.333 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 15
+Helen Harris
+helen.harris@sakilacustomer.org
+Wypożyczone filmy:
+- Candidate Perdition - Wypozyczono 19 dni temu
+- Smoking Barbarella - Wypozyczono 19 dni temu
+
+15:19:30.337 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 527
+Cory Meehan
+cory.meehan@sakilacustomer.org
+Wypożyczone filmy:
+- Jason Trap - Wypozyczono 19 dni temu
+
+15:19:30.340 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 274
+Naomi Jennings
+naomi.jennings@sakilacustomer.org
+Wypożyczone filmy:
+- Wild Apollo - Wypozyczono 19 dni temu
+
+15:19:30.342 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 530
+Darryl Ashcraft
+darryl.ashcraft@sakilacustomer.org
+Wypożyczone filmy:
+- Pure Runner - Wypozyczono 19 dni temu
+
+15:19:30.344 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 532
+Neil Renner
+neil.renner@sakilacustomer.org
+Wypożyczone filmy:
+- World Leathernecks - Wypozyczono 19 dni temu
+
+15:19:30.346 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 533
+Jessie Milam
+jessie.milam@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:19:30.349 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 21
+Michelle Clark
+michelle.clark@sakilacustomer.org
+Wypożyczone filmy:
+- Dwarfs Alter - Wypozyczono 19 dni temu
+
+15:19:30.351 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 22
+Laura Rodriguez
+laura.rodriguez@sakilacustomer.org
+Wypożyczone filmy:
+- Suit Walls - Wypozyczono 19 dni temu
+
+15:19:30.354 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 534
+Christian Jung
+christian.jung@sakilacustomer.org
+Wypożyczone filmy:
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:19:30.357 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 279
+Dianne Shelton
+dianne.shelton@sakilacustomer.org
+Wypożyczone filmy:
+- Cat Coneheads - Wypozyczono 19 dni temu
+
+15:19:30.360 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 23
+Sarah Lewis
+sarah.lewis@sakilacustomer.org
+Wypożyczone filmy:
+- Divine Resurrection - Wypozyczono 19 dni temu
+
+15:19:30.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 537
+Clinton Buford
+clinton.buford@sakilacustomer.org
+Wypożyczone filmy:
+- Scarface Bang - Wypozyczono 19 dni temu
+
+15:19:30.366 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 282
+Jenny Castro
+jenny.castro@sakilacustomer.org
+Wypożyczone filmy:
+- Volcano Texas - Wypozyczono 19 dni temu
+
+15:19:30.368 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 284
+Sonia Gregory
+sonia.gregory@sakilacustomer.org
+Wypożyczone filmy:
+- Berets Agent - Wypozyczono 19 dni temu
+- Frida Slipper - Wypozyczono 19 dni temu
+
+15:19:30.374 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 28
+Cynthia Young
+cynthia.young@sakilacustomer.org
+Wypożyczone filmy:
+- Suspects Quills - Wypozyczono 19 dni temu
+
+15:19:30.385 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 29
+Angela Hernandez
+angela.hernandez@sakilacustomer.org
+Wypożyczone filmy:
+- Canyon Stock - Wypozyczono 19 dni temu
+
+15:19:30.388 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 287
+Becky Miles
+becky.miles@sakilacustomer.org
+Wypożyczone filmy:
+- Virginian Pluto - Wypozyczono 19 dni temu
+
+15:19:30.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 33
+Anna Hill
+anna.hill@sakilacustomer.org
+Wypożyczone filmy:
+- Boulevard Mob - Wypozyczono 19 dni temu
+
+15:19:30.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 548
+Allan Cornish
+allan.cornish@sakilacustomer.org
+Wypożyczone filmy:
+- Sundance Invasion - Wypozyczono 19 dni temu
+
+15:19:30.396 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 550
+Guy Brownlee
+guy.brownlee@sakilacustomer.org
+Wypożyczone filmy:
+- Enough Raging - Wypozyczono 19 dni temu
+
+15:19:30.400 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 295
+Daisy Bates
+daisy.bates@sakilacustomer.org
+Wypożyczone filmy:
+- Pride Alamo - Wypozyczono 19 dni temu
+
+15:19:30.403 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 296
+Ramona Hale
+ramona.hale@sakilacustomer.org
+Wypożyczone filmy:
+- Insider Arizona - Wypozyczono 19 dni temu
+
+15:19:30.413 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 41
+Stephanie Mitchell
+stephanie.mitchell@sakilacustomer.org
+Wypożyczone filmy:
+- Shock Cabin - Wypozyczono 19 dni temu
+
+15:19:30.423 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 42
+Carolyn Perez
+carolyn.perez@sakilacustomer.org
+Wypożyczone filmy:
+- Torque Bound - Wypozyczono 19 dni temu
+- River Outlaw - Wypozyczono 19 dni temu
+
+15:19:30.425 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 554
+Dwayne Olvera
+dwayne.olvera@sakilacustomer.org
+Wypożyczone filmy:
+- Academy Dinosaur - Wypozyczono 12 dni temu
+
+15:19:30.428 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 43
+Christine Roberts
+christine.roberts@sakilacustomer.org
+Wypożyczone filmy:
+- Pollock Deliverance - Wypozyczono 19 dni temu
+- Motions Details - Wypozyczono 19 dni temu
+
+15:19:30.430 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 44
+Marie Turner
+marie.turner@sakilacustomer.org
+Wypożyczone filmy:
+- American Circus - Wypozyczono 19 dni temu
+
+15:19:30.434 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 300
+John Farnsworth
+john.farnsworth@sakilacustomer.org
+Wypożyczone filmy:
+- Outlaw Hanky - Wypozyczono 19 dni temu
+
+15:19:30.438 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 557
+Felix Gaffney
+felix.gaffney@sakilacustomer.org
+Wypożyczone filmy:
+- Lady Stage - Wypozyczono 19 dni temu
+
+15:19:30.440 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 560
+Jordan Archuleta
+jordan.archuleta@sakilacustomer.org
+Wypożyczone filmy:
+- Pianist Outfield - Wypozyczono 19 dni temu
+- Movie Shakespeare - Wypozyczono 19 dni temu
+
+15:19:30.444 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 561
+Ian Still
+ian.still@sakilacustomer.org
+Wypożyczone filmy:
+- Mockingbird Hollywood - Wypozyczono 19 dni temu
+
+15:19:30.446 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 52
+Julie Sanchez
+julie.sanchez@sakilacustomer.org
+Wypożyczone filmy:
+- Trading Pinocchio - Wypozyczono 19 dni temu
+
+15:19:30.448 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 53
+Heather Morris
+heather.morris@sakilacustomer.org
+Wypożyczone filmy:
+- Peach Innocent - Wypozyczono 19 dni temu
+- Lawless Vision - Wypozyczono 19 dni temu
+
+15:19:30.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 568
+Alberto Henning
+alberto.henning@sakilacustomer.org
+Wypożyczone filmy:
+- Vanishing Rocky - Wypozyczono 19 dni temu
+
+15:19:30.467 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 56
+Gloria Cook
+gloria.cook@sakilacustomer.org
+Wypożyczone filmy:
+- Igby Maker - Wypozyczono 19 dni temu
+
+15:19:30.471 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 570
+Ivan Cromwell
+ivan.cromwell@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:19:30.474 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 58
+Jean Bell
+jean.bell@sakilacustomer.org
+Wypożyczone filmy:
+- Ridgemont Submarine - Wypozyczono 19 dni temu
+
+15:19:30.478 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 315
+Kenneth Gooden
+kenneth.gooden@sakilacustomer.org
+Wypożyczone filmy:
+- Operation Operation - Wypozyczono 19 dni temu
+
+15:19:30.481 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 60
+Mildred Bailey
+mildred.bailey@sakilacustomer.org
+Wypożyczone filmy:
+- Boogie Amelie - Wypozyczono 19 dni temu
+- Chamber Italian - Wypozyczono 19 dni temu
+
+15:19:30.484 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 317
+Edward Baugh
+edward.baugh@sakilacustomer.org
+Wypożyczone filmy:
+- Armageddon Lost - Wypozyczono 19 dni temu
+
+15:19:30.487 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 576
+Morris Mccarter
+morris.mccarter@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Vanished Garden - Wypozyczono 19 dni temu
+
+15:19:30.489 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 64
+Judith Cox
+judith.cox@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:19:30.493 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 579
+Daryl Larue
+daryl.larue@sakilacustomer.org
+Wypożyczone filmy:
+- Streak Ridgemont - Wypozyczono 19 dni temu
+
+15:19:30.497 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 324
+Gary Coy
+gary.coy@sakilacustomer.org
+Wypożyczone filmy:
+- Chitty Lock - Wypozyczono 19 dni temu
+
+15:19:30.502 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 69
+Judy Gray
+judy.gray@sakilacustomer.org
+Wypożyczone filmy:
+- Summer Scarface - Wypozyczono 19 dni temu
+
+15:19:30.505 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 582
+Andy Vanhorn
+andy.vanhorn@sakilacustomer.org
+Wypożyczone filmy:
+- Tuxedo Mile - Wypozyczono 19 dni temu
+
+15:19:30.509 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 327
+Larry Thrasher
+larry.thrasher@sakilacustomer.org
+Wypożyczone filmy:
+- Pulp Beverly - Wypozyczono 19 dni temu
+
+15:19:30.513 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 73
+Beverly Brooks
+beverly.brooks@sakilacustomer.org
+Wypożyczone filmy:
+- Shrek License - Wypozyczono 19 dni temu
+
+15:19:30.517 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 585
+Perry Swafford
+perry.swafford@sakilacustomer.org
+Wypożyczone filmy:
+- Devil Desire - Wypozyczono 19 dni temu
+
+15:19:30.520 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 330
+Scott Shelley
+scott.shelley@sakilacustomer.org
+Wypożyczone filmy:
+- Grail Frankenstein - Wypozyczono 19 dni temu
+
+15:19:30.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 587
+Sergio Stanfield
+sergio.stanfield@sakilacustomer.org
+Wypożyczone filmy:
+- Camelot Vacation - Wypozyczono 19 dni temu
+
+15:19:30.529 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 75
+Tammy Sanders
+tammy.sanders@sakilacustomer.org
+Wypożyczone filmy:
+- Lust Lock - Wypozyczono 19 dni temu
+- Trouble Date - Wypozyczono 19 dni temu
+- Sleepy Japanese - Wypozyczono 19 dni temu
+
+15:19:30.532 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 334
+Raymond Mcwhorter
+raymond.mcwhorter@sakilacustomer.org
+Wypożyczone filmy:
+- Smoochy Control - Wypozyczono 19 dni temu
+
+15:19:30.536 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 590
+Seth Hannon
+seth.hannon@sakilacustomer.org
+Wypożyczone filmy:
+- African Egg - Wypozyczono 19 dni temu
+
+15:19:30.539 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 335
+Gregory Mauldin
+gregory.mauldin@sakilacustomer.org
+Wypożyczone filmy:
+- Hunger Roof - Wypozyczono 19 dni temu
+
+15:19:30.542 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 80
+Marilyn Ross
+marilyn.ross@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:19:30.545 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 336
+Joshua Mark
+joshua.mark@sakilacustomer.org
+Wypożyczone filmy:
+- Juggler Hardly - Wypozyczono 19 dni temu
+
+15:19:30.548 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 592
+Terrance Roush
+terrance.roush@sakilacustomer.org
+Wypożyczone filmy:
+- Kick Savannah - Wypozyczono 19 dni temu
+
+15:19:30.550 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 337
+Jerry Jordon
+jerry.jordon@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:19:30.553 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 83
+Louise Jenkins
+louise.jenkins@sakilacustomer.org
+Wypożyczone filmy:
+- Frisco Forrest - Wypozyczono 19 dni temu
+
+15:19:30.556 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 596
+Enrique Forsythe
+enrique.forsythe@sakilacustomer.org
+Wypożyczone filmy:
+- Gunfight Moon - Wypozyczono 19 dni temu
+
+15:19:30.558 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 597
+Freddie Duggan
+freddie.duggan@sakilacustomer.org
+Wypożyczone filmy:
+- Ghost Groundhog - Wypozyczono 19 dni temu
+
+15:19:30.563 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 87
+Wanda Patterson
+wanda.patterson@sakilacustomer.org
+Wypożyczone filmy:
+- Doors President - Wypozyczono 19 dni temu
+
+15:19:30.565 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 91
+Lois Butler
+lois.butler@sakilacustomer.org
+Wypożyczone filmy:
+- Bubble Grosse - Wypozyczono 19 dni temu
+
+15:19:30.568 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 349
+Joe Gilliland
+joe.gilliland@sakilacustomer.org
+Wypożyczone filmy:
+- Amistad Midsummer - Wypozyczono 19 dni temu
+
+15:19:30.571 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 94
+Norma Gonzales
+norma.gonzales@sakilacustomer.org
+Wypożyczone filmy:
+- Sleeping Suspects - Wypozyczono 19 dni temu
+
+15:19:30.575 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 352
+Albert Crouse
+albert.crouse@sakilacustomer.org
+Wypożyczone filmy:
+- Varsity Trip - Wypozyczono 19 dni temu
+
+15:19:30.579 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 354
+Justin Ngo
+justin.ngo@sakilacustomer.org
+Wypożyczone filmy:
+- Titanic Boondock - Wypozyczono 19 dni temu
+- Trojan Tomorrow - Wypozyczono 19 dni temu
+
+15:19:30.583 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 99
+Emily Diaz
+emily.diaz@sakilacustomer.org
+Wypożyczone filmy:
+- Connection Microcosmos - Wypozyczono 19 dni temu
+
+15:19:30.598 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 355
+Terry Grissom
+terry.grissom@sakilacustomer.org
+Wypożyczone filmy:
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:19:30.603 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 100
+Robin Hayes
+robin.hayes@sakilacustomer.org
+Wypożyczone filmy:
+- Bound Cheaper - Wypozyczono 19 dni temu
+
+15:19:30.608 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 101
+Peggy Myers
+peggy.myers@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+
+15:19:30.614 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 359
+Willie Markham
+willie.markham@sakilacustomer.org
+Wypożyczone filmy:
+- Center Dinosaur - Wypozyczono 19 dni temu
+
+15:19:30.620 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 361
+Lawrence Lawton
+lawrence.lawton@sakilacustomer.org
+Wypożyczone filmy:
+- Insects Stone - Wypozyczono 19 dni temu
+- Half Outfield - Wypozyczono 19 dni temu
+
+15:19:30.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 107
+Florence Woods
+florence.woods@sakilacustomer.org
+Wypożyczone filmy:
+- Club Graffiti - Wypozyczono 19 dni temu
+- Blade Polish - Wypozyczono 19 dni temu
+
+15:19:30.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 108
+Tracy Cole
+tracy.cole@sakilacustomer.org
+Wypożyczone filmy:
+- Ali Forever - Wypozyczono 19 dni temu
+
+15:19:30.638 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 366
+Brandon Huey
+brandon.huey@sakilacustomer.org
+Wypożyczone filmy:
+- Ace Goldfinger - Wypozyczono 19 dni temu
+
+15:19:30.643 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 111
+Carmen Owens
+carmen.owens@sakilacustomer.org
+Wypożyczone filmy:
+- Affair Prejudice - Wypozyczono 19 dni temu
+
+15:19:30.647 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 369
+Fred Wheat
+fred.wheat@sakilacustomer.org
+Wypożyczone filmy:
+- Sweethearts Suspects - Wypozyczono 19 dni temu
+
+15:19:30.654 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 114
+Grace Ellis
+grace.ellis@sakilacustomer.org
+Wypożyczone filmy:
+- Dragonfly Strangers - Wypozyczono 19 dni temu
+
+15:19:30.661 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 115
+Wendy Harrison
+wendy.harrison@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+
+15:19:30.666 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 373
+Louis Leone
+louis.leone@sakilacustomer.org
+Wypożyczone filmy:
+- Zhivago Core - Wypozyczono 19 dni temu
+
+15:19:30.672 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 374
+Jeremy Hurtado
+jeremy.hurtado@sakilacustomer.org
+Wypożyczone filmy:
+- Window Side - Wypozyczono 19 dni temu
+
+15:19:30.677 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 120
+Sylvia Ortiz
+sylvia.ortiz@sakilacustomer.org
+Wypożyczone filmy:
+- Opposite Necklace - Wypozyczono 19 dni temu
+
+15:19:30.681 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 388
+Craig Morrell
+craig.morrell@sakilacustomer.org
+Wypożyczone filmy:
+- Mummy Creatures - Wypozyczono 19 dni temu
+
+15:19:30.686 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 135
+Juanita Mason
+juanita.mason@sakilacustomer.org
+Wypożyczone filmy:
+- None Spiking - Wypozyczono 19 dni temu
+
+15:19:30.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 394
+Chris Brothers
+chris.brothers@sakilacustomer.org
+Wypożyczone filmy:
+- Cincinatti Whisperer - Wypozyczono 19 dni temu
+
+15:19:30.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 142
+April Burns
+april.burns@sakilacustomer.org
+Wypożyczone filmy:
+- Outfield Massacre - Wypozyczono 19 dni temu
+
+15:19:30.697 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 405
+Leonard Schofield
+leonard.schofield@sakilacustomer.org
+Wypożyczone filmy:
+- Fight Jawbreaker - Wypozyczono 19 dni temu
+
+15:19:30.700 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 152
+Alicia Mills
+alicia.mills@sakilacustomer.org
+Wypożyczone filmy:
+- Sleepless Monsoon - Wypozyczono 19 dni temu
+
+15:19:30.704 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 410
+Curtis Irby
+curtis.irby@sakilacustomer.org
+Wypożyczone filmy:
+- Gorgeous Bingo - Wypozyczono 19 dni temu
+
+15:19:30.708 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 155
+Gail Knight
+gail.knight@sakilacustomer.org
+Wypożyczone filmy:
+- Hyde Doctor - Wypozyczono 19 dni temu
+- Chasing Fight - Wypozyczono 19 dni temu
+
+15:19:30.712 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 411
+Norman Currier
+norman.currier@sakilacustomer.org
+Wypożyczone filmy:
+- Harry Idaho - Wypozyczono 19 dni temu
+
+15:19:30.716 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 412
+Allen Butterfield
+allen.butterfield@sakilacustomer.org
+Wypożyczone filmy:
+- Mulan Moon - Wypozyczono 19 dni temu
+
+15:19:30.719 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 417
+Travis Estep
+travis.estep@sakilacustomer.org
+Wypożyczone filmy:
+- Seabiscuit Punk - Wypozyczono 19 dni temu
+
+15:19:30.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 162
+Lauren Hudson
+lauren.hudson@sakilacustomer.org
+Wypożyczone filmy:
+- Midnight Westward - Wypozyczono 19 dni temu
+
+15:19:30.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 163
+Cathy Spencer
+cathy.spencer@sakilacustomer.org
+Wypożyczone filmy:
+- Sons Interview - Wypozyczono 19 dni temu
+- Holes Brannigan - Wypozyczono 19 dni temu
+
+15:19:30.728 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 421
+Lee Hawks
+lee.hawks@sakilacustomer.org
+Wypożyczone filmy:
+- Detective Vision - Wypozyczono 19 dni temu
+
+15:19:30.732 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 422
+Melvin Ellington
+melvin.ellington@sakilacustomer.org
+Wypożyczone filmy:
+- Basic Easy - Wypozyczono 19 dni temu
+
+15:19:30.735 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 424
+Kyle Spurlock
+kyle.spurlock@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:19:30.738 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 168
+Regina Berry
+regina.berry@sakilacustomer.org
+Wypożyczone filmy:
+- Wedding Apollo - Wypozyczono 19 dni temu
+
+15:19:30.743 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 175
+Annette Olson
+annette.olson@sakilacustomer.org
+Wypożyczone filmy:
+- Deer Virginian - Wypozyczono 19 dni temu
+- Pirates Roxanne - Wypozyczono 19 dni temu
+
+15:19:30.746 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 431
+Joel Francisco
+joel.francisco@sakilacustomer.org
+Wypożyczone filmy:
+- Lovely Jingle - Wypozyczono 19 dni temu
+
+15:19:30.749 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 178
+Marion Snyder
+marion.snyder@sakilacustomer.org
+Wypożyczone filmy:
+- Forrester Comancheros - Wypozyczono 19 dni temu
+
+15:19:30.753 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 180
+Stacy Cunningham
+stacy.cunningham@sakilacustomer.org
+Wypożyczone filmy:
+- Name Detective - Wypozyczono 19 dni temu
+
+15:19:30.757 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 181
+Ana Bradley
+ana.bradley@sakilacustomer.org
+Wypożyczone filmy:
+- Happiness United - Wypozyczono 19 dni temu
+
+15:19:30.761 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 438
+Barry Lovelace
+barry.lovelace@sakilacustomer.org
+Wypożyczone filmy:
+- Creatures Shakespeare - Wypozyczono 19 dni temu
+
+15:19:30.764 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 440
+Bernard Colby
+bernard.colby@sakilacustomer.org
+Wypożyczone filmy:
+- Queen Luke - Wypozyczono 19 dni temu
+
+15:19:30.767 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 441
+Mario Cheatham
+mario.cheatham@sakilacustomer.org
+Wypożyczone filmy:
+- Eagles Panky - Wypozyczono 19 dni temu
+
+15:19:30.770 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 186
+Holly Fox
+holly.fox@sakilacustomer.org
+Wypożyczone filmy:
+- South Wait - Wypozyczono 19 dni temu
+
+15:19:30.774 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 188
+Melanie Armstrong
+melanie.armstrong@sakilacustomer.org
+Wypożyczone filmy:
+- Intentions Empire - Wypozyczono 19 dni temu
+
+15:19:30.778 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 190
+Yolanda Weaver
+yolanda.weaver@sakilacustomer.org
+Wypożyczone filmy:
+- Day Unfaithful - Wypozyczono 19 dni temu
+
+15:19:30.781 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 191
+Jeanette Greene
+jeanette.greene@sakilacustomer.org
+Wypożyczone filmy:
+- Effect Gladiator - Wypozyczono 19 dni temu
+
+15:19:30.786 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 192
+Laurie Lawrence
+laurie.lawrence@sakilacustomer.org
+Wypożyczone filmy:
+- Haunted Antitrust - Wypozyczono 19 dni temu
+
+15:19:30.788 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 448
+Miguel Betancourt
+miguel.betancourt@sakilacustomer.org
+Wypożyczone filmy:
+- State Wasteland - Wypozyczono 19 dni temu
+- Family Sweet - Wypozyczono 19 dni temu
+
+15:19:30.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 193
+Katie Elliott
+katie.elliott@sakilacustomer.org
+Wypożyczone filmy:
+- Monster Spartacus - Wypozyczono 19 dni temu
+
+15:19:30.797 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 450
+Jay Robb
+jay.robb@sakilacustomer.org
+Wypożyczone filmy:
+- Intrigue Worst - Wypozyczono 19 dni temu
+
+15:19:30.800 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 452
+Tom Milner
+tom.milner@sakilacustomer.org
+Wypożyczone filmy:
+- Hunchback Impossible - Wypozyczono 19 dni temu
+
+15:19:30.802 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 199
+Beth Franklin
+beth.franklin@sakilacustomer.org
+Wypożyczone filmy:
+- Baked Cleopatra - Wypozyczono 19 dni temu
+
+15:19:30.806 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 200
+Jeanne Lawson
+jeanne.lawson@sakilacustomer.org
+Wypożyczone filmy:
+- Mulholland Beast - Wypozyczono 19 dni temu
+
+15:19:30.812 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 457
+Bill Gavin
+bill.gavin@sakilacustomer.org
+Wypożyczone filmy:
+- Gleaming Jawbreaker - Wypozyczono 19 dni temu
+- Cleopatra Devil - Wypozyczono 19 dni temu
+
+15:19:30.815 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 208
+Lucy Wheeler
+lucy.wheeler@sakilacustomer.org
+Wypożyczone filmy:
+- Seattle Expecations - Wypozyczono 19 dni temu
+- Curtain Videotape - Wypozyczono 19 dni temu
+
+15:19:30.823 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 211
+Stacey Montgomery
+stacey.montgomery@sakilacustomer.org
+Wypożyczone filmy:
+- Details Packer - Wypozyczono 19 dni temu
+
+15:19:30.834 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 213
+Gina Williamson
+gina.williamson@sakilacustomer.org
+Wypożyczone filmy:
+- Bang Kwai - Wypozyczono 19 dni temu
+
+15:19:30.839 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 214
+Kristin Johnston
+kristin.johnston@sakilacustomer.org
+Wypożyczone filmy:
+- Star Operation - Wypozyczono 19 dni temu
+
+15:19:30.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 215
+Jessie Banks
+jessie.banks@sakilacustomer.org
+Wypożyczone filmy:
+- Dances None - Wypozyczono 19 dni temu
+
+15:19:30.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 216
+Natalie Meyer
+natalie.meyer@sakilacustomer.org
+Wypożyczone filmy:
+- Women Dorado - Wypozyczono 19 dni temu
+- Sweden Shining - Wypozyczono 19 dni temu
+
+15:19:30.851 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 472
+Greg Robins
+greg.robins@sakilacustomer.org
+Wypożyczone filmy:
+- Wanda Chamber - Wypozyczono 19 dni temu
+
+15:19:30.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 474
+Dustin Gillette
+dustin.gillette@sakilacustomer.org
+Wypożyczone filmy:
+- Crooked Frogmen - Wypozyczono 19 dni temu
+
+15:19:30.864 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 219
+Willie Howell
+willie.howell@sakilacustomer.org
+Wypożyczone filmy:
+- Titans Jerk - Wypozyczono 19 dni temu
+
+15:19:30.881 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 476
+Derrick Bourque
+derrick.bourque@sakilacustomer.org
+Wypożyczone filmy:
+- Mosquito Armageddon - Wypozyczono 19 dni temu
+
+15:19:30.885 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 479
+Zachary Hite
+zachary.hite@sakilacustomer.org
+Wypożyczone filmy:
+- Frost Head - Wypozyczono 19 dni temu
+
+15:19:30.885 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 227
+Colleen Burton
+colleen.burton@sakilacustomer.org
+Wypożyczone filmy:
+- Moonwalker Fool - Wypozyczono 19 dni temu
+
+15:19:30.888 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 228
+Allison Stanley
+allison.stanley@sakilacustomer.org
+Wypożyczone filmy:
+- Grapes Fury - Wypozyczono 19 dni temu
+- Cyclone Family - Wypozyczono 19 dni temu
+
+15:19:30.891 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 229
+Tamara Nguyen
+tamara.nguyen@sakilacustomer.org
+Wypożyczone filmy:
+- Loathing Legally - Wypozyczono 19 dni temu
+
+15:19:30.896 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 234
+Claudia Fuller
+claudia.fuller@sakilacustomer.org
+Wypożyczone filmy:
+- Encino Elf - Wypozyczono 19 dni temu
+
+15:19:30.899 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 236
+Marcia Dean
+marcia.dean@sakilacustomer.org
+Wypożyczone filmy:
+- Alone Trip - Wypozyczono 19 dni temu
+
+15:19:30.903 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 493
+Brent Harkins
+brent.harkins@sakilacustomer.org
+Wypożyczone filmy:
+- Lord Arizona - Wypozyczono 19 dni temu
+
+15:19:30.907 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 495
+Charlie Bess
+charlie.bess@sakilacustomer.org
+Wypożyczone filmy:
+- Song Hedwig - Wypozyczono 19 dni temu
+
+15:19:30.911 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 496
+Tyler Wren
+tyler.wren@sakilacustomer.org
+Wypożyczone filmy:
+- Blanket Beverly - Wypozyczono 19 dni temu
+
+15:19:30.913 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 497
+Gilbert Sledge
+gilbert.sledge@sakilacustomer.org
+Wypożyczone filmy:
+- Silverado Goldfinger - Wypozyczono 19 dni temu
+
+15:19:30.917 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 244
+Viola Hanson
+viola.hanson@sakilacustomer.org
+Wypożyczone filmy:
+- Shawshank Bubble - Wypozyczono 19 dni temu
+
+15:19:30.921 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 245
+Courtney Day
+courtney.day@sakilacustomer.org
+Wypożyczone filmy:
+- Driver Annie - Wypozyczono 19 dni temu
+
+15:19:30.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 505
+Rafael Abney
+rafael.abney@sakilacustomer.org
+Wypożyczone filmy:
+- Conversation Downhill - Wypozyczono 19 dni temu
+
+15:19:30.935 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 251
+Vickie Brewer
+vickie.brewer@sakilacustomer.org
+Wypożyczone filmy:
+- Swarm Gold - Wypozyczono 19 dni temu
+
+15:19:30.944 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 252
+Mattie Hoffman
+mattie.hoffman@sakilacustomer.org
+Wypożyczone filmy:
+- Drifter Commandments - Wypozyczono 19 dni temu
+
+15:19:30.947 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.d.services.kafka.KafkaConsumer - 
+ID: 508
+Milton Howland
+milton.howland@sakilacustomer.org
+Wypożyczone filmy:
+- Disciple Mother - Wypozyczono 19 dni temu
+

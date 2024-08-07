@@ -17,14 +17,21 @@ import com.example.dvdRental.model.Store;
 import com.example.dvdRental.repositories.AddressRepository;
 import com.example.dvdRental.repositories.CustomerRepository;
 import com.example.dvdRental.repositories.StoreRepository;
-import org.aspectj.weaver.ast.Not;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.event.annotation.AfterTestMethod;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,18 +39,18 @@ import static org.junit.jupiter.api.Assertions.*;
 //@Transactional
 @SpringBootTest(classes = DvdRentalApplication.class)
 public class CustomerServiceTest {
-    private final CustomerService customerService;
+    private final CustomerServiceImpl customerService;
     private final CustomerRepository customerRepository;
     private final StoreRepository storeRepository;
     private final AddressRepository addressRepository;
-    private static final String email = "janek12345678.kowalski@gmail.com";
-    private static final String emailToChange = "sampleemail12@gmail.com";
+    private static final String email = "janek123453367899.kowalski@gmail.com";
+    private static final String emailToChange = "sample33email1299@gmail.com";
 
     private static PostCustomerDTO postCustomerDTO;
 
     @Autowired
     public CustomerServiceTest(
-            CustomerService customerService,
+            CustomerServiceImpl customerService,
             CustomerRepository customerRepository,
             StoreRepository storeRepository,
             AddressRepository addressRepository) {
@@ -52,6 +59,19 @@ public class CustomerServiceTest {
         this.storeRepository = storeRepository;
         this.addressRepository = addressRepository;
     }
+
+//    public PostCustomerDTO mockPostCustomerDTO() {
+//        PostCustomerDTO mock = Mockito.mock(PostCustomerDTO.class);
+//        Mockito.when(mock.getStoreId()).thenReturn(1);
+//        Mockito.when(mock.getFirstName()).thenReturn("Jano");
+//        Mockito.when(mock.getLastName()).thenReturn("Kowalski");
+//        Mockito.when(mock.getEmail()).thenReturn(email);
+//        Mockito.when(mock.getAddressId()).thenReturn(2);
+//        Mockito.when(mock.getActivebool()).thenReturn(false);
+//        Mockito.when(mock.getActive()).thenReturn(1);
+//        return mock;
+//    }
+
 
 //    @BeforeAll
 //    public static void setUp() {
@@ -162,6 +182,8 @@ public class CustomerServiceTest {
         postCustomerDTO.setActivebool(false);
         postCustomerDTO.setActive(1);
 
+//        PostCustomerDTO postCustomerDTO = mockPostCustomerDTO();
+
         try {
             CustomerDTO createdCustomer = customerService.createNewCustomer(postCustomerDTO);
             assertNotNull(createdCustomer.getCustomerId(), "Customer ID should not be null");
@@ -263,6 +285,7 @@ public class CustomerServiceTest {
         try {
             customerService.createNewCustomer(postCustomerDTO);
         } catch (Exception e) {
+            e.printStackTrace();
             fail();
         }
 
@@ -453,6 +476,7 @@ public class CustomerServiceTest {
         try {
             customerService.createNewCustomer(postCustomerDTO);
         } catch (Exception e) {
+            e.printStackTrace();
             fail();
         }
 
@@ -545,6 +569,7 @@ public class CustomerServiceTest {
         try {
             customerService.createNewCustomer(postCustomerDTO);
         } catch (Exception e) {
+            e.printStackTrace();
             fail();
         }
 
